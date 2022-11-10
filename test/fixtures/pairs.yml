@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marriage: 2022-11-03
+  separation: 2022-11-03
+  local: MyString
+  leaf1_id: one
+  leaf2_id: one
+
+two:
+  marriage: 2022-11-03
+  separation: 2022-11-03
+  local: MyString
+  leaf1_id: two
+  leaf2_id: two
