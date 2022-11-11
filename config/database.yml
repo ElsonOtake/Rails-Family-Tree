@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: Rails_Family_Tree_production
-  username: Rails_Family_Tree
-  password: <%= ENV["RAILS_FAMILY_TREE_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
