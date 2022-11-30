@@ -14,7 +14,11 @@ class Api::V1::UsersController < ApplicationController
     parents = Leaf.find_by_sql("select id, name, gender from leafs where id in
       (select leafs.id from leafs join pairs on leafs.id = leaf1_id or leafs.id = leaf2_id join
       branches on branches.pair_id = pairs.id where branches.leaf_id = #{params[:id]})")
+    children = Leaf.find_by_sql("select id, name, gender from leafs where id in (select leaf_id
+      from branches join pairs on branches.pair_id = pairs.id where leaf1_id = #{params[:id]} or
+      leaf2_id = #{params[:id]}) order by birth")
     puts "parents #{parents}"
+    puts "children #{children}"
     puts "@user #{@user}"
     render json: @user, status: :ok
   end
