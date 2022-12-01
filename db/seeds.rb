@@ -1,39 +1,55 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# frozen_string_literal: true
 
-Leaf.create(name: 'Takashi Sakamoto', gender: 'M', alive: 'N', birth: '1918-8-28', death: '2003-9-27', description: '坂本 登志. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Kiku Sakamoto', gender: 'F', alive: 'N', birth: '1893-1-24', death: '1942-5-23', description: '坂本 きく. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Kenji Sakamoto', gender: 'M', alive: 'N', birth: '1889-11-6', death: '1964-1-25', description: '坂本 兼治. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Chiyo Sakamoto', gender: 'F', alive: 'N', birth: '1919-1-5', death: '2015-11-18', description: '坂本 チヨ. Natural de Hokkaido Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru 40 dias de viagem')
-Leaf.create(name: 'Satiye Sakamoto Otake', gender: 'F', alive: 'S', birth: '1941-6-26', description: '大竹 坂本 幸枝. Natural de Pompéia/SP')
-Leaf.create(name: 'Tetuo Nakabaiashi Sakamoto', gender: 'M', alive: 'S', birth: '1944-3-10', description: 'Natural de Paulópolis/SP')
-Leaf.create(name: 'Armando Masao Sakamoto', gender: 'M', alive: 'N', birth: '1947-7-27', death: '2017-4-26', description: 'Natural de Paulópolis SP')
+Leaf.create(name: 'Takashi Sakamoto', gender: 'M', alive: 'N', birth: '1918-8-28', death: '2003-9-27',
+            description: '坂本 登志. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Kiku Sakamoto', gender: 'F', alive: 'N', birth: '1893-1-24', death: '1942-5-23',
+            description: '坂本 きく. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Kenji Sakamoto', gender: 'M', alive: 'N', birth: '1889-11-6', death: '1964-1-25',
+            description: '坂本 兼治. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Chiyo Sakamoto', gender: 'F', alive: 'N', birth: '1919-1-5', death: '2015-11-18',
+            description: '坂本 チヨ. Natural de Hokkaido Entrada em Santos no Brasil em 28 de fevereiro de 1937 no ' \
+            'navio Montevideo Maru 40 dias de viagem')
+Leaf.create(name: 'Satiye Sakamoto Otake', gender: 'F', alive: 'S', birth: '1941-6-26',
+            description: '大竹 坂本 幸枝. Natural de Pompéia/SP')
+Leaf.create(name: 'Tetuo Nakabaiashi Sakamoto', gender: 'M', alive: 'S', birth: '1944-3-10',
+            description: 'Natural de Paulópolis/SP')
+Leaf.create(name: 'Armando Masao Sakamoto', gender: 'M', alive: 'N', birth: '1947-7-27', death: '2017-4-26',
+            description: 'Natural de Paulópolis SP')
 Leaf.create(name: 'Julio Minor Sakamoto', gender: 'M', alive: 'S', birth: '1950-10-10')
 Leaf.create(name: 'Yoriko Ueno', gender: 'F', alive: 'S', birth: '1950-10-10')
 Leaf.create(name: 'Emilia Setuko Sakamoto', gender: 'F', alive: 'S', birth: '1952-4-29')
 Leaf.create(name: 'Alice Sakamoto', gender: 'F', alive: 'N', birth: '1956-7-26')
 Leaf.create(name: 'Marina Sakamoto', gender: 'F', alive: 'N', birth: '1958-1-11', death: '1998-5-10')
-Leaf.create(name: 'Sergio Hiroshi Sakamoto', gender: 'M', alive: 'S', birth: '1964-10-20', description: 'Nasceu na Casa Maternal Leonor Mendes de Barros')
-Leaf.create(name: 'Sonoi Nakabayashi', gender: 'F', alive: 'N', birth: '1897-4-14', death: '1981-8-30', description: '中林 ソノイ. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru. Fazenda Santa Laura em Garça.')
-Leaf.create(name: 'Torajiro Nakabayashi', gender: 'M', alive: 'N', birth: '1890-6-2', death: '1940-8-16', description: '中林 虎次郎. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru. Fazenda Santa Laura em Garça.')
-Leaf.create(name: 'Akira Otake', gender: 'M', alive: 'N', birth: '1934-10-25', death: '1993-7-1', description: '大竹 明. Natural de Pirajuí/SP')
-Leaf.create(name: 'Moyo Yonekubo Otake', gender: 'F', alive: 'N', birth: '1914-10-14', death: '2005-7-21', description: '大竹 米窪 もよ. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru')
-Leaf.create(name: 'Tami Otake', gender: 'F', alive: 'N', birth: '1864-6-12', death: '1948-10-20', description: '大竹 たみ. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
-Leaf.create(name: 'Takeo Yonekubo', gender: 'M', alive: 'N', birth: '1878-1-12', death: '1955-11-11', description: '米窪 武雄. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru')
+Leaf.create(name: 'Sergio Hiroshi Sakamoto', gender: 'M', alive: 'S', birth: '1964-10-20',
+            description: 'Nasceu na Casa Maternal Leonor Mendes de Barros')
+Leaf.create(name: 'Sonoi Nakabayashi', gender: 'F', alive: 'N', birth: '1897-4-14', death: '1981-8-30',
+            description: '中林 ソノイ. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru. Fazenda Santa Laura em Garça.')
+Leaf.create(name: 'Torajiro Nakabayashi', gender: 'M', alive: 'N', birth: '1890-6-2', death: '1940-8-16',
+            description: '中林 虎次郎. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru. Fazenda Santa Laura em Garça.')
+Leaf.create(name: 'Akira Otake', gender: 'M', alive: 'N', birth: '1934-10-25', death: '1993-7-1',
+            description: '大竹 明. Natural de Pirajuí/SP')
+Leaf.create(name: 'Moyo Yonekubo Otake', gender: 'F', alive: 'N', birth: '1914-10-14', death: '2005-7-21',
+            description: '大竹 米窪 もよ. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru')
+Leaf.create(name: 'Tami Otake', gender: 'F', alive: 'N', birth: '1864-6-12', death: '1948-10-20',
+            description: '大竹 たみ. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
+Leaf.create(name: 'Takeo Yonekubo', gender: 'M', alive: 'N', birth: '1878-1-12', death: '1955-11-11',
+            description: '米窪 武雄. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru')
 Leaf.create(name: 'Yutaka Otake', gender: 'M', alive: 'S', birth: '1933-1-5', description: '大竹 豊')
-Leaf.create(name: 'Carmen Hisako Nakaji', gender: 'F', alive: 'N', birth: '1937-6-19', death: '1981-8-7', description: '久子')
-Leaf.create(name: 'Iracema Otake dos Santos', gender: 'F', alive: 'S', birth: '1940-11-21', description: '和子. O nome Kazuko foi retirado no casamento')
+Leaf.create(name: 'Carmen Hisako Nakaji', gender: 'F', alive: 'N', birth: '1937-6-19', death: '1981-8-7',
+            description: '久子')
+Leaf.create(name: 'Iracema Otake dos Santos', gender: 'F', alive: 'S', birth: '1940-11-21',
+            description: '和子. O nome Kazuko foi retirado no casamento')
 Leaf.create(name: 'Marcio Kazunori Otake', gender: 'M', alive: 'S', birth: '1963-3-19', description: '大竹 一法 マルシオ')
-Leaf.create(name: 'Regina Harumi Otake Miura', gender: 'F', alive: 'S', birth: '1974-8-16', description: '三浦 大竹 春美 へジナ')
+Leaf.create(name: 'Regina Harumi Otake Miura', gender: 'F', alive: 'S', birth: '1974-8-16',
+            description: '三浦 大竹 春美 へジナ')
 Leaf.create(name: 'Elson Akio Otake', gender: 'M', alive: 'S', birth: '1964-10-2', description: '大竹 昭夫 エルソン')
 Leaf.create(name: 'Cristina Akemi Otake', gender: 'F', alive: 'S', birth: '1983-8-25', description: '大竹 明美 クリスチナ')
-Leaf.create(name: 'Jorge Miura', gender: 'M', alive: 'N', birth: '1957-12-14', death: '2019-8-1', description: '三浦 ジョルジェ')
-Leaf.create(name: 'Helena Ayako Kariatsumari Otake', gender: 'F', alive: 'S', birth: '1967-9-27', description: '大竹 狩集 綾子 エレナ')
+Leaf.create(name: 'Jorge Miura', gender: 'M', alive: 'N', birth: '1957-12-14', death: '2019-8-1',
+            description: '三浦 ジョルジェ')
+Leaf.create(name: 'Helena Ayako Kariatsumari Otake', gender: 'F', alive: 'S', birth: '1967-9-27',
+            description: '大竹 狩集 綾子 エレナ')
 Leaf.create(name: 'Adalberto Santos Braga', gender: 'M', alive: 'N', birth: '1937-6-25', death: '1994-10-22')
 Leaf.create(name: 'Sandra Meyre Otake dos Santos Miyahara', gender: 'F', alive: 'S', birth: '1963-2-19')
 Leaf.create(name: 'Sergio Roberto Otake dos Santos', gender: 'M', alive: 'N', birth: '1964-4-13', death: '1976-1-10')
@@ -42,12 +58,15 @@ Leaf.create(name: 'Joaquim Carlos Ranzoni', gender: 'M', alive: 'S', birth: '195
 Leaf.create(name: 'Caroline Ranzoni', gender: 'F', alive: 'S', birth: '1985-9-5')
 Leaf.create(name: 'Andre Akiyoshi Miyahara', gender: 'M', alive: 'S', birth: '1974-9-5')
 Leaf.create(name: 'Andre Akiyoshi Miyahara Jr.', gender: 'M', alive: 'S', birth: '1999-1-24')
-Leaf.create(name: 'Sanzan Nakaji', gender: 'M', alive: 'S', birth: '1936-11-24', description: '中地三山. Wakayama. Família Miyamoto (origem). Entrada em Santos no Brasil em 14 de agosto de 1956 no navio Brasil Maru')
+Leaf.create(name: 'Sanzan Nakaji', gender: 'M', alive: 'S', birth: '1936-11-24',
+            description: '中地三山. Wakayama. Família Miyamoto (origem). Entrada em Santos no Brasil em 14 de agosto ' \
+            'de 1956 no navio Brasil Maru')
 Leaf.create(name: 'Claudia Sayuri Tokuda', gender: 'F', alive: 'S', birth: '1963-8-18')
 Leaf.create(name: 'Cristina Emi Nakaji', gender: 'F', alive: 'S', birth: '1966-4-2')
 Leaf.create(name: 'Augusto Tokuda', gender: 'M', alive: 'S', birth: '1961-8-26')
 Leaf.create(name: 'Lucas Mitsuharo Tokuda', gender: 'M', alive: 'S', birth: '1993-11-26')
-Leaf.create(name: 'Luzinete Carneiro da Silva Otake', gender: 'F', alive: 'S', birth: '1953-1-25', description: 'Natural de Igarapeba - PE')
+Leaf.create(name: 'Luzinete Carneiro da Silva Otake', gender: 'F', alive: 'S', birth: '1953-1-25',
+            description: 'Natural de Igarapeba - PE')
 Leaf.create(name: 'Reiko Claudia Otake', gender: 'F', alive: 'S', birth: '1974-8-14')
 Leaf.create(name: 'Mayumi Tais Otake', gender: 'F', alive: 'S', birth: '1979-6-20')
 Leaf.create(name: 'Joana Gonçalves de Almeida', gender: 'F', alive: 'N', birth: '1937-2-27', death: '1989-8-26')
@@ -56,20 +75,40 @@ Leaf.create(name: 'Fabio Hamilton Otake', gender: 'M', alive: 'S', birth: '1963-
 Leaf.create(name: 'Eiko Cristina Otake', gender: 'F', alive: 'N', birth: '1959-9-22', death: '1995-1-30')
 Leaf.create(name: 'Francisco Fernando Otake', gender: 'M', alive: 'S', birth: '1968-5-26')
 Leaf.create(name: 'Tikashi Sakamoto', gender: 'M', alive: 'N', description: '坂本 近至')
-Leaf.create(name: 'Asa Yamasaki', gender: 'F', alive: 'N', birth: '1914-2-28', death: '1986-12-28', description: 'あさ. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Tani Yamasaki', gender: 'F', alive: 'N', birth: '1916-2-10', description: 'たに. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Rikizo Sakamoto', gender: 'M', alive: 'N', birth: '1920-11-28', death: '1990-12-13', description: '坂本 力三. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru. Faleceu em Diadema/SP')
-Leaf.create(name: 'Yoshio Sakamoto', gender: 'M', alive: 'N', birth: '1923-3-30', death: '2003-6-11', description: '坂本 善夫. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Toshio Sakamoto', gender: 'M', alive: 'N', birth: '1926-5-15', death: '1958-7-31', description: '坂本 俊雄. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru. Morreu na obra de construção da av 9 de Julho.')
-Leaf.create(name: 'Michio Sakamoto', gender: 'M', alive: 'S', birth: '1928-5-5', description: '坂本 通郎. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Yasujiro Nakabayashi', gender: 'M', alive: 'N', birth: '1916-7-1', description: '中林 安治郎. Hokkaido. Campinas. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru')
+Leaf.create(name: 'Asa Yamasaki', gender: 'F', alive: 'N', birth: '1914-2-28', death: '1986-12-28',
+            description: 'あさ. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Tani Yamasaki', gender: 'F', alive: 'N', birth: '1916-2-10',
+            description: 'たに. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Rikizo Sakamoto', gender: 'M', alive: 'N', birth: '1920-11-28', death: '1990-12-13',
+            description: '坂本 力三. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila ' \
+            'Maru. Faleceu em Diadema/SP')
+Leaf.create(name: 'Yoshio Sakamoto', gender: 'M', alive: 'N', birth: '1923-3-30', death: '2003-6-11',
+            description: '坂本 善夫. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Toshio Sakamoto', gender: 'M', alive: 'N', birth: '1926-5-15', death: '1958-7-31',
+            description: '坂本 俊雄. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila ' \
+            'Maru. Morreu na obra de construção da av 9 de Julho.')
+Leaf.create(name: 'Michio Sakamoto', gender: 'M', alive: 'S', birth: '1928-5-5',
+            description: '坂本 通郎. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Yasujiro Nakabayashi', gender: 'M', alive: 'N', birth: '1916-7-1',
+            description: '中林 安治郎. Hokkaido. Campinas. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no ' \
+            'navio Montevideo Maru')
 Leaf.create(name: 'Tiyo', gender: 'F', alive: 'N')
 Leaf.create(name: 'Kiyo', gender: 'F', alive: 'N')
-Leaf.create(name: 'Takeo Nakabayashi', gender: 'M', alive: 'N', birth: '1921-8-15', death: '2019-2-13', description: '中林 武雄. Hokkaido. Penha. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru')
-Leaf.create(name: 'Hideo Nakabayashi', gender: 'M', alive: 'S', birth: '1924-6-14', description: '中林 秀夫. Hokkaido. Carrão. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru')
-Leaf.create(name: 'Shokiti Nakabayashi', gender: 'M', alive: 'N', birth: '1927-1-24', death: '2013-10-15', description: '中林 庄吉. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru')
-Leaf.create(name: 'Miyo Nakabayashi Missu', gender: 'F', alive: 'N', birth: '1929-8-20', death: '2017-6-20', description: '美代. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru')
-Leaf.create(name: 'Nobu Shimada', gender: 'F', alive: 'S', birth: '1934-7-10', description: 'ノブ. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio Montevideo Maru')
+Leaf.create(name: 'Takeo Nakabayashi', gender: 'M', alive: 'N', birth: '1921-8-15', death: '2019-2-13',
+            description: '中林 武雄. Hokkaido. Penha. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru')
+Leaf.create(name: 'Hideo Nakabayashi', gender: 'M', alive: 'S', birth: '1924-6-14',
+            description: '中林 秀夫. Hokkaido. Carrão. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru')
+Leaf.create(name: 'Shokiti Nakabayashi', gender: 'M', alive: 'N', birth: '1927-1-24', death: '2013-10-15',
+            description: '中林 庄吉. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru')
+Leaf.create(name: 'Miyo Nakabayashi Missu', gender: 'F', alive: 'N', birth: '1929-8-20', death: '2017-6-20',
+            description: '美代. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru')
+Leaf.create(name: 'Nobu Shimada', gender: 'F', alive: 'S', birth: '1934-7-10',
+            description: 'ノブ. Hokkaido. Entrada em Santos no Brasil em 28 de fevereiro de 1937 no navio ' \
+            'Montevideo Maru')
 Leaf.create(name: 'Hatsue Tanaka', gender: 'F', alive: 'S', birth: '1938-5-1')
 Leaf.create(name: 'Yaso Omi', gender: 'M', alive: 'S', birth: '1945-2-20', description: 'Natural de Piratininga')
 Leaf.create(name: 'Ricardo Sakamoto Omi', gender: 'M', alive: 'S', birth: '1985-11-29')
@@ -78,14 +117,16 @@ Leaf.create(name: 'Keisso Ueno', gender: 'M', alive: 'S', birth: '1947-8-18', de
 Leaf.create(name: 'Andre Toshio Ueno', gender: 'M', alive: 'S', birth: '1985-4-16')
 Leaf.create(name: 'Eduardo Mitio Ueno', gender: 'M', alive: 'S', birth: '1981-10-9')
 Leaf.create(name: 'Cristina Sayuri Ueno', gender: 'F', alive: 'S', birth: '1980-2-21')
-Leaf.create(name: 'Lucia Fernandes Mello Sakamoto', gender: 'F', alive: 'S', birth: '1955-4-15', description: 'Natural de Ituiutaba/MG')
+Leaf.create(name: 'Lucia Fernandes Mello Sakamoto', gender: 'F', alive: 'S', birth: '1955-4-15',
+            description: 'Natural de Ituiutaba/MG')
 Leaf.create(name: 'Mariana Mieko Sakamoto', gender: 'F', alive: 'S', birth: '1981-2-4')
 Leaf.create(name: 'Daniel Hideki Sakamoto', gender: 'M', alive: 'S', birth: '1983-5-19')
 Leaf.create(name: 'Thiago Tomio Sakamoto', gender: 'M', alive: 'S', birth: '1985-12-17')
 Leaf.create(name: 'Silvia Aparecida de Brito Sakamoto', gender: 'F', alive: 'N', birth: '1946-9-6')
 Leaf.create(name: 'Ana Rita Sakamoto', gender: 'F', alive: 'S', birth: '1973-8-17')
 Leaf.create(name: 'Roberta Maria Sakamoto Thomazelli', gender: 'F', alive: 'S', birth: '1975-12-3')
-Leaf.create(name: 'Hetsuko Sakamoto', gender: 'F', alive: 'S', birth: '1941-6-14', description: 'Natural de Presidente Venceslau/SP. Registro de nascimento no dia 20 de agosto.')
+Leaf.create(name: 'Hetsuko Sakamoto', gender: 'F', alive: 'S', birth: '1941-6-14',
+            description: 'Natural de Presidente Venceslau/SP. Registro de nascimento no dia 20 de agosto.')
 Leaf.create(name: 'Rodrigo Eiji Sakamoto', gender: 'M', alive: 'S', birth: '1976-11-5')
 Leaf.create(name: 'Jenifer Mori', gender: 'F', alive: 'S')
 Leaf.create(name: 'Carolina Yukari Sakamoto', gender: 'F', alive: 'S', birth: '1995-10-9')
@@ -97,17 +138,23 @@ Leaf.create(name: 'Fabiana da Cruz Otake', gender: 'F', alive: 'S', birth: '1987
 Leaf.create(name: 'Juliana da Cruz Otake', gender: 'F', alive: 'S', birth: '1989-2-19')
 Leaf.create(name: 'Fabio da Cruz Otake', gender: 'M', alive: 'S', birth: '1990-3-17')
 Leaf.create(name: 'Felipe da Cruz Otake', gender: 'M', alive: 'S', birth: '1991-10-20')
-Leaf.create(name: 'Fatima Maria da Cruz', gender: 'F', alive: 'S', birth: '1994-6-26', description: 's/ Otake no nome estah sendo adotada por outra família')
+Leaf.create(name: 'Fatima Maria da Cruz', gender: 'F', alive: 'S', birth: '1994-6-26',
+            description: 's/ Otake no nome estah sendo adotada por outra família')
 Leaf.create(name: 'Geraldo Manoel da Silva', gender: 'M', alive: 'S')
 Leaf.create(name: 'Miriam Otake de Oliveira', gender: 'F', alive: 'S')
 Leaf.create(name: 'Eliane', gender: 'F', alive: 'S')
 Leaf.create(name: 'Amanda Takahashi Otake', gender: 'F', alive: 'S', birth: '1997-10-21')
-Leaf.create(name: 'Lucas Takahashi Otake', gender: 'M', alive: 'S', birth: '2000-4-1', death: '2009-9-8', description: 'Faleceu de leucemia')
+Leaf.create(name: 'Lucas Takahashi Otake', gender: 'M', alive: 'S', birth: '2000-4-1', death: '2009-9-8',
+            description: 'Faleceu de leucemia')
 Leaf.create(name: 'Marta Regina Sakamoto', gender: 'F', alive: 'S', birth: '1980-1-24')
-Leaf.create(name: 'Hifumi Akiyoshi', gender: 'F', alive: 'N', birth: '1922-1-13', description: 'Foto : Shigeo, Moyo, Hifumi e Kimiko')
-Leaf.create(name: 'Shigeo Yonekubo', gender: 'M', alive: 'N', birth: '1919-7-7', death: '1970-11-13', description: '米窪 繁雄')
-Leaf.create(name: 'Takashi Yonekubo', gender: 'M', alive: 'N', birth: '1921-2-12', death: '1983-12-30', description: '米窪 孝. No cemitério do Araça o nome consta como Takeshi Yonekubo')
-Leaf.create(name: 'Masayuki Akiyoshi', gender: 'M', alive: 'N', birth: '1912-8-1', description: '秋吉正行. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Hifumi Akiyoshi', gender: 'F', alive: 'N', birth: '1922-1-13',
+            description: 'Foto : Shigeo, Moyo, Hifumi e Kimiko')
+Leaf.create(name: 'Shigeo Yonekubo', gender: 'M', alive: 'N', birth: '1919-7-7', death: '1970-11-13',
+            description: '米窪 繁雄')
+Leaf.create(name: 'Takashi Yonekubo', gender: 'M', alive: 'N', birth: '1921-2-12', death: '1983-12-30',
+            description: '米窪 孝. No cemitério do Araça o nome consta como Takeshi Yonekubo')
+Leaf.create(name: 'Masayuki Akiyoshi', gender: 'M', alive: 'N', birth: '1912-8-1',
+            description: '秋吉正行. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
 Leaf.create(name: 'Roberto Yonekubo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rosangela', gender: 'F', alive: 'S')
 Leaf.create(name: 'Kuniko', gender: 'F', alive: 'S')
@@ -121,10 +168,15 @@ Leaf.create(name: 'Mitsuo Akiyoshi', gender: 'M', alive: 'N', death: '2004-10-22
 Leaf.create(name: 'Masao Akiyoshi', gender: 'M', alive: 'S')
 Leaf.create(name: 'Isao Akiyoshi', gender: 'M', alive: 'S')
 Leaf.create(name: 'Tsunesaburo Murase', gender: 'M', alive: 'N', death: '1963-11-8')
-Leaf.create(name: 'Take (Murase) Otake', gender: 'F', alive: 'N', birth: '1901-7-20', death: '1928-6-18', description: '大竹 たけ. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
-Leaf.create(name: 'Yoshiaki Murase', gender: 'M', alive: 'N', birth: '1931-1-1', death: '2003-1-1', description: '村瀬 義秋. 5 anos + velho q Minoru. Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Fusako Ota', gender: 'F', alive: 'S', birth: '1923-1-1', description: '太田 ふさ子. Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Minoru (Murase) Otake', gender: 'M', alive: 'N', birth: '1925-9-2', description: '大竹 實. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru.')
+Leaf.create(name: 'Take (Murase) Otake', gender: 'F', alive: 'N', birth: '1901-7-20', death: '1928-6-18',
+            description: '大竹 たけ. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
+Leaf.create(name: 'Yoshiaki Murase', gender: 'M', alive: 'N', birth: '1931-1-1', death: '2003-1-1',
+            description: '村瀬 義秋. 5 anos + velho q Minoru. Conhecido somente o ano de nascimento e falecimento. Dia ' \
+            'e mês chutado.')
+Leaf.create(name: 'Fusako Ota', gender: 'F', alive: 'S', birth: '1923-1-1',
+            description: '太田 ふさ子. Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Minoru (Murase) Otake', gender: 'M', alive: 'N', birth: '1925-9-2',
+            description: '大竹 實. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru.')
 Leaf.create(name: 'Hiromi Otake Henna', gender: 'F', alive: 'S', birth: '1949-10-21')
 Leaf.create(name: 'Yuriko Otake Perina', gender: 'F', alive: 'S', birth: '1952-1-19')
 Leaf.create(name: 'Tsuneo Henna', gender: 'M', alive: 'S', birth: '1945-2-25')
@@ -136,31 +188,56 @@ Leaf.create(name: 'Bruno Henna Abussanra', gender: 'M', alive: 'S', birth: '1993
 Leaf.create(name: 'Marcos Perina', gender: 'M', alive: 'S')
 Leaf.create(name: 'Amanda Perina', gender: 'F', alive: 'S', birth: '1978-6-4')
 Leaf.create(name: 'Melissa Perina', gender: 'F', alive: 'S', birth: '1980-3-12')
-Leaf.create(name: 'Asakichi Yonekubo', gender: 'M', alive: 'N', description: '米窪 朝吉. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Yatsue Yonekubo', gender: 'F', alive: 'N', birth: '1895-6-2', death: '1990-7-8', description: '米窪 や津枝. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru. Faleceu em Marília/SP')
-Leaf.create(name: 'Tadanori Yonekubo', gender: 'M', alive: 'N', birth: '1921-5-25', description: '米窪 忠教. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Morimasa Yonekubo', gender: 'M', alive: 'S', birth: '1930-5-25', description: '米窪 守正. Nagano. Marília. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Masato Yonekubo', gender: 'M', alive: 'N', birth: '1932-3-10', death: '1956-4-18', description: '米窪 真人. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru. Faleceu em Bandeirantes/PR')
-Leaf.create(name: 'Asako Yonekubo', gender: 'F', alive: 'S', birth: '1919-12-16', description: '米窪 朝子. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Ayako Yonekubo', gender: 'F', alive: 'S', birth: '1925-9-29', description: '米窪 朝や子. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Shoko Yonekubo', gender: 'F', alive: 'S', birth: '1927-11-11', description: '米窪 昭子. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Asakichi Yonekubo', gender: 'M', alive: 'N',
+            description: '米窪 朝吉. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio ' \
+            'Buenos Aires Maru')
+Leaf.create(name: 'Yatsue Yonekubo', gender: 'F', alive: 'N', birth: '1895-6-2', death: '1990-7-8',
+            description: '米窪 や津枝. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio ' \
+            'Buenos Aires Maru. Faleceu em Marília/SP')
+Leaf.create(name: 'Tadanori Yonekubo', gender: 'M', alive: 'N', birth: '1921-5-25',
+            description: '米窪 忠教. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio ' \
+            'Buenos Aires Maru')
+Leaf.create(name: 'Morimasa Yonekubo', gender: 'M', alive: 'S', birth: '1930-5-25',
+            description: '米窪 守正. Nagano. Marília. Entrada em Santos no Brasil em 02 de agosto de 1933 ' \
+            'no navio Buenos Aires Maru')
+Leaf.create(name: 'Masato Yonekubo', gender: 'M', alive: 'N', birth: '1932-3-10', death: '1956-4-18',
+            description: '米窪 真人. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no navio ' \
+            'Buenos Aires Maru. Faleceu em Bandeirantes/PR')
+Leaf.create(name: 'Asako Yonekubo', gender: 'F', alive: 'S', birth: '1919-12-16',
+            description: '米窪 朝子. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no ' \
+            'navio Buenos Aires Maru')
+Leaf.create(name: 'Ayako Yonekubo', gender: 'F', alive: 'S', birth: '1925-9-29',
+            description: '米窪 朝や子. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no ' \
+            'navio Buenos Aires Maru')
+Leaf.create(name: 'Shoko Yonekubo', gender: 'F', alive: 'S', birth: '1927-11-11',
+            description: '米窪 昭子. Nagano. Entrada em Santos no Brasil em 02 de agosto de 1933 no ' \
+            'navio Buenos Aires Maru')
 Leaf.create(name: 'Uda Kokichi', gender: 'M', alive: 'S')
 Leaf.create(name: 'Leticia Miwa Tokuda', gender: 'F', alive: 'S', birth: '1996-12-3')
 Leaf.create(name: 'Desconhecido', gender: 'M', alive: 'S')
 Leaf.create(name: 'Tatiane Cristina Otake', gender: 'F', alive: 'S', birth: '1977-10-21')
 Leaf.create(name: 'Mariana Henna Abussanra', gender: 'F', alive: 'S', birth: '1996-10-20')
-Leaf.create(name: 'Tetsuno Ono', gender: 'F', alive: 'N', birth: '1899-12-20', death: '1983-11-12', description: '大野テツノ. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
-Leaf.create(name: 'Sakuichi Ono', gender: 'M', alive: 'N', birth: '1900-2-22', death: '1957-7-31', description: '大野作市. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
+Leaf.create(name: 'Tetsuno Ono', gender: 'F', alive: 'N', birth: '1899-12-20', death: '1983-11-12',
+            description: '大野テツノ. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
+Leaf.create(name: 'Sakuichi Ono', gender: 'M', alive: 'N', birth: '1900-2-22', death: '1957-7-31',
+            description: '大野作市. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
 Leaf.create(name: 'Tatiana Mitie Miura', gender: 'F', alive: 'S', birth: '2002-6-4', description: '三浦 巳智恵 タチアナ')
-Leaf.create(name: 'Cho Otake', gender: 'M', alive: 'N', birth: '1905-12-10', death: '1989-11-12', description: '大竹 長. Partida de Gifu em 7/7/1927 e entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru. Com a esposa Yoshio, a mãe Tami, a irmã Take e o sobrinho Minoru.')
-Leaf.create(name: 'Omine Yonekubo', gender: 'F', alive: 'N', birth: '1889-3-3', description: '米窪 をみね. Moyo tinha 12 anos qdo ela faleceu. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru')
+Leaf.create(name: 'Cho Otake', gender: 'M', alive: 'N', birth: '1905-12-10', death: '1989-11-12',
+            description: '大竹 長. Partida de Gifu em 7/7/1927 e entrada em Santos no Brasil em 01 de Setembro de 1927 ' \
+            'no navio Manila Maru. Com a esposa Yoshio, a mãe Tami, a irmã Take e o sobrinho Minoru.')
+Leaf.create(name: 'Omine Yonekubo', gender: 'F', alive: 'N', birth: '1889-3-3',
+            description: '米窪 をみね. Moyo tinha 12 anos qdo ela faleceu. Entrada em Santos no Brasil em 26 de outubro ' \
+            'de 1918 no navio Sanuki Maru')
 Leaf.create(name: 'Hideko Nishida', gender: 'F', alive: 'S')
-Leaf.create(name: 'Mariko Ikeda', gender: 'F', alive: 'S', birth: '1926-1-1', description: 'Desconhecido dia e mes de nascimento')
+Leaf.create(name: 'Mariko Ikeda', gender: 'F', alive: 'S', birth: '1926-1-1',
+            description: 'Desconhecido dia e mes de nascimento')
 Leaf.create(name: 'Marie', gender: 'F', alive: 'S', description: 'Foto : set/1957')
 Leaf.create(name: 'Satie', gender: 'F', alive: 'S', description: 'Foto : set/1957')
 Leaf.create(name: 'Keiko', gender: 'F', alive: 'S')
 Leaf.create(name: 'Tiemi', gender: 'F', alive: 'S')
-Leaf.create(name: 'Fusako Nagashima', gender: 'F', alive: 'N', birth: '1916-7-21', death: '1992-12-25', description: '房子. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru. Faleceu em Piracicaba/SP')
+Leaf.create(name: 'Fusako Nagashima', gender: 'F', alive: 'N', birth: '1916-7-21', death: '1992-12-25',
+            description: '房子. Entrada em Santos no Brasil em 26 de outubro de 1918 no navio Sanuki Maru. Faleceu ' \
+            'em Piracicaba/SP')
 Leaf.create(name: 'Fumio Nagashima', gender: 'M', alive: 'N')
 Leaf.create(name: 'Helio Nagashima', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rosa', gender: 'F', alive: 'S')
@@ -170,22 +247,32 @@ Leaf.create(name: 'Tereza Simonaka', gender: 'F', alive: 'S')
 Leaf.create(name: 'Mao Yonekubo', gender: 'F', alive: 'N', birth: '1890-1-13', death: '1963-4-23')
 Leaf.create(name: 'Jonataro Shimodairo', gender: 'M', alive: 'N')
 Leaf.create(name: 'Akira Nishida', gender: 'M', alive: 'N')
-Leaf.create(name: 'Goro Ikeda', gender: 'M', alive: 'S', birth: '1920-12-25', description: '池田五郎. Osaka. Entrada em Santos no Brasil em 31 de julho de 1924 no navio Canada Maru')
+Leaf.create(name: 'Goro Ikeda', gender: 'M', alive: 'S', birth: '1920-12-25',
+            description: '池田五郎. Osaka. Entrada em Santos no Brasil em 31 de julho de 1924 no navio Canada Maru')
 Leaf.create(name: 'Shizuko Yonekubo', gender: 'F', alive: 'S')
-Leaf.create(name: 'Kimiko Yonekubo', gender: 'F', alive: 'N', birth: '1924-8-20', death: '1975-12-24', description: 'Joana Yonekubo')
+Leaf.create(name: 'Kimiko Yonekubo', gender: 'F', alive: 'N', birth: '1924-8-20', death: '1975-12-24',
+            description: 'Joana Yonekubo')
 Leaf.create(name: 'Yasutaro Otake', gender: 'M', alive: 'N', description: 'Yassujiro?')
-Leaf.create(name: 'Kazue Otake', gender: 'F', alive: 'S', birth: '1930-12-3', description: '大野和惠. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
+Leaf.create(name: 'Kazue Otake', gender: 'F', alive: 'S', birth: '1930-12-3',
+            description: '大野和惠. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
 Leaf.create(name: 'Elizete Volpe Otake', gender: 'F', alive: 'S')
 Leaf.create(name: 'Sandra Regina Otake', gender: 'F', alive: 'S', birth: '1967-9-20')
-Leaf.create(name: 'Yoshio Otake', gender: 'F', alive: 'N', birth: '1904-3-30', description: '大竹 よしお. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
-Leaf.create(name: 'Tomihide Sakamoto', gender: 'M', alive: 'N', birth: '1930-4-19', description: '坂本 富英. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
-Leaf.create(name: 'Munenao Yamasaki', gender: 'M', alive: 'N', birth: '1910-6-22', death: '1967-10-27', description: '山崎 宗直. Toyama. Entrada em Santos no Brasil em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Soichiro Yamasaki', gender: 'M', alive: 'N', birth: '1907-4-10', death: '1969-6-14', description: '山崎 宗一郎. Tokyo. Entrada em Santos no Brasil em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Yoshie Sakamoto', gender: 'F', alive: 'N', birth: '1925-2-7', death: '1962-2-16', description: '近藤 芳江. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
+Leaf.create(name: 'Yoshio Otake', gender: 'F', alive: 'N', birth: '1904-3-30',
+            description: '大竹 よしお. Gifu. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
+Leaf.create(name: 'Tomihide Sakamoto', gender: 'M', alive: 'N', birth: '1930-4-19',
+            description: '坂本 富英. Yamanashi. Entrada em Santos no Brasil em 27 de junho de 1932 no navio Manila Maru')
+Leaf.create(name: 'Munenao Yamasaki', gender: 'M', alive: 'N', birth: '1910-6-22', death: '1967-10-27',
+            description: '山崎 宗直. Toyama. Entrada em Santos no Brasil em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Soichiro Yamasaki', gender: 'M', alive: 'N', birth: '1907-4-10', death: '1969-6-14',
+            description: '山崎 宗一郎. Tokyo. Entrada em Santos no Brasil em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Yoshie Sakamoto', gender: 'F', alive: 'N', birth: '1925-2-7', death: '1962-2-16',
+            description: '近藤 芳江. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
 Leaf.create(name: 'Yasuo Shimada', gender: 'M', alive: 'N', birth: '1929-9-4', death: '1972-1-25')
-Leaf.create(name: 'Mikiji Missu', gender: 'M', alive: 'S', birth: '1928-8-4', description: '翠幹冶. Gifu. Entrada em Santos no Brasil em 22 de maio de 1934 no navio Arizona Maru')
+Leaf.create(name: 'Mikiji Missu', gender: 'M', alive: 'S', birth: '1928-8-4',
+            description: '翠幹冶. Gifu. Entrada em Santos no Brasil em 22 de maio de 1934 no navio Arizona Maru')
 Leaf.create(name: 'Yuriko Nakabayashi', gender: 'F', alive: 'S')
-Leaf.create(name: 'Hiroko Nakabayashi', gender: 'F', alive: 'S', birth: '1928-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Hiroko Nakabayashi', gender: 'F', alive: 'S', birth: '1928-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Ernesto Kazuo Shimada', gender: 'M', alive: 'S', birth: '1959-6-27')
 Leaf.create(name: 'Rose Talma Shimada', gender: 'F', alive: 'S')
 Leaf.create(name: 'Guilherme Ken Shimada', gender: 'M', alive: 'S', birth: '1994-9-28')
@@ -200,7 +287,8 @@ Leaf.create(name: 'Andre Katsuhiro Pereira Omi', gender: 'M', alive: 'S', birth:
 Leaf.create(name: 'Maria Aparecida Azevedo', gender: 'F', alive: 'S', birth: '1967-4-15', description: 'Mara')
 Leaf.create(name: 'Barbara Azevedo Omi', gender: 'F', alive: 'S', birth: '1995-4-17')
 Leaf.create(name: 'Vinicius Azevedo Omi', gender: 'M', alive: 'S', birth: '2002-1-21')
-Leaf.create(name: 'Tadashi Tanaka', gender: 'M', alive: 'S', birth: '1931-9-10', description: '田中 正. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Tadashi Tanaka', gender: 'M', alive: 'S', birth: '1931-9-10',
+            description: '田中 正. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
 Leaf.create(name: 'Kazuko Tanaka', gender: 'F', alive: 'S')
 Leaf.create(name: 'Leonardo Akira Tanaka', gender: 'M', alive: 'S')
 Leaf.create(name: 'Luriko Tanaka', gender: 'F', alive: 'S')
@@ -260,7 +348,8 @@ Leaf.create(name: 'Tomoko Yoshii Yamazaki', gender: 'F', alive: 'S', birth: '193
 Leaf.create(name: 'Masaaki Yoshii', gender: 'M', alive: 'N', birth: '1932-8-18', death: '1997-11-26')
 Leaf.create(name: 'Edson Yoshii', gender: 'M', alive: 'S', birth: '1961-4-30')
 Leaf.create(name: 'Rosemaly Naomi Tabuti', gender: 'F', alive: 'S', birth: '1969-2-5')
-Leaf.create(name: 'Naokatsu Yamazaki', gender: 'M', alive: 'S', birth: '1936-2-5', description: '直勝 Registrado como Naomatsu')
+Leaf.create(name: 'Naokatsu Yamazaki', gender: 'M', alive: 'S', birth: '1936-2-5',
+            description: '直勝 Registrado como Naomatsu')
 Leaf.create(name: 'Ayako Kurasa Yamazaki', gender: 'F', alive: 'N', birth: '1941-4-21', death: '1992-11-27')
 Leaf.create(name: 'Reimi Yamazaki', gender: 'F', alive: 'S', birth: '1969-8-2')
 Leaf.create(name: 'Meire Yamazaki', gender: 'F', alive: 'S')
@@ -269,17 +358,27 @@ Leaf.create(name: 'Satoe Hatori', gender: 'F', alive: 'S', birth: '1938-1-10')
 Leaf.create(name: 'Shinzo Hatori', gender: 'M', alive: 'N', birth: '1933-3-26', death: '1998-3-27')
 Leaf.create(name: 'Eduardo Masaro Hatori', gender: 'M', alive: 'S')
 Leaf.create(name: 'Fabio Katsumi Hatori', gender: 'M', alive: 'S')
-Leaf.create(name: 'Elisa Mariko Hosaki', gender: 'F', alive: 'S', birth: '1962-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Sueli Hatori', gender: 'F', alive: 'S', birth: '1964-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Elisa Mariko Hosaki', gender: 'F', alive: 'S', birth: '1962-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Sueli Hatori', gender: 'F', alive: 'S', birth: '1964-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Sakiko Nakamura', gender: 'F', alive: 'S', birth: '1941-12-8')
-Leaf.create(name: 'Mitio Nakamura', gender: 'M', alive: 'N', birth: '1935-1-1', death: '1991-3-1', description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Mitio Nakamura', gender: 'M', alive: 'N', birth: '1935-1-1', death: '1991-3-1',
+            description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
 Leaf.create(name: 'Gilberto Shigeru Nakamura', gender: 'M', alive: 'S')
 Leaf.create(name: 'Elisabete Nakamura Kagohara', gender: 'F', alive: 'S')
 Leaf.create(name: 'Janete Asami Sato', gender: 'F', alive: 'S')
-Leaf.create(name: 'Fumi Nakabayashi', gender: 'F', alive: 'N', birth: '1921-5-28', description: '田中 フミ. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Toshie Barros', gender: 'F', alive: 'S', description: 'Foto : Miyo, Nobu, Takashi, Takeo, Toshio Tanaka, Marta Tomiko, Tetsuo, Cristina Kazue, Satiye, Masao e Toshie')
-Leaf.create(name: 'Cristina Kazue Sasaki', gender: 'F', alive: 'S', description: 'Foto : Miyo, Nobu, Takashi, Takeo, Toshio Tanaka, Marta Tomiko, Tetsuo, Cristina Kazue, Satiye, Masao e Toshie')
-Leaf.create(name: 'Marta Tomiko Rossi', gender: 'F', alive: 'N', description: 'Foto : Miyo, Nobu, Takashi, Takeo, Toshio Tanaka, Marta Tomiko, Tetsuo, Cristina Kazue, Satiye, Masao e Toshie')
+Leaf.create(name: 'Fumi Nakabayashi', gender: 'F', alive: 'N', birth: '1921-5-28',
+            description: '田中 フミ. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Toshie Barros', gender: 'F', alive: 'S',
+            description: 'Foto : Miyo, Nobu, Takashi, Takeo, Toshio Tanaka, Marta Tomiko, Tetsuo, Cristina Kazue, ' \
+            'Satiye, Masao e Toshie')
+Leaf.create(name: 'Cristina Kazue Sasaki', gender: 'F', alive: 'S',
+            description: 'Foto : Miyo, Nobu, Takashi, Takeo, Toshio Tanaka, Marta Tomiko, Tetsuo, Cristina Kazue, ' \
+            'Satiye, Masao e Toshie')
+Leaf.create(name: 'Marta Tomiko Rossi', gender: 'F', alive: 'N',
+            description: 'Foto : Miyo, Nobu, Takashi, Takeo, Toshio Tanaka, Marta Tomiko, Tetsuo, Cristina Kazue, ' \
+            'Satiye, Masao e Toshie')
 Leaf.create(name: 'Alice Shizue Viana', gender: 'F', alive: 'S')
 Leaf.create(name: 'Jorge Yasunori Nakabayashi', gender: 'M', alive: 'S', description: '中林 保則 ジョルジェ')
 Leaf.create(name: 'Dirceu Mamoru Nakabayashi', gender: 'M', alive: 'S')
@@ -292,19 +391,27 @@ Leaf.create(name: 'Fernanda Koshimizu', gender: 'F', alive: 'S', birth: '1983-3-
 Leaf.create(name: 'Francisco Nobuo Tabuti', gender: 'M', alive: 'S', birth: '1964-2-23')
 Leaf.create(name: 'Desconhecida', gender: 'F', alive: 'S')
 Leaf.create(name: 'Desconhecido', gender: 'M', alive: 'S')
-Leaf.create(name: 'Jiro Tanaka', gender: 'M', alive: 'N', birth: '1894-4-23', description: '田中 次郎. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Miki Tanaka', gender: 'F', alive: 'N', birth: '1891-3-12', description: '田中 美き. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Jiro Tanaka', gender: 'M', alive: 'N', birth: '1894-4-23',
+            description: '田中 次郎. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Miki Tanaka', gender: 'F', alive: 'N', birth: '1891-3-12',
+            description: '田中 美き. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
 Leaf.create(name: 'Pety', gender: 'P', alive: 'N', birth: '1971-8-1')
-Leaf.create(name: 'Roberto Akio Yoshii', gender: 'M', alive: 'S', birth: '1958-10-24', description: 'Registrado no dia 25 de outubro pois o pai não gostava do numero 24')
-Leaf.create(name: 'Mitiko Yoshii', gender: 'F', alive: 'S', birth: '1958-4-1', description: 'Conhecido somente o ano e mês de nascimento. Dia chutado.')
-Leaf.create(name: 'Renata Yumi Yoshii', gender: 'F', alive: 'S', birth: '1992-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Roberto Akio Yoshii', gender: 'M', alive: 'S', birth: '1958-10-24',
+            description: 'Registrado no dia 25 de outubro pois o pai não gostava do numero 24')
+Leaf.create(name: 'Mitiko Yoshii', gender: 'F', alive: 'S', birth: '1958-4-1',
+            description: 'Conhecido somente o ano e mês de nascimento. Dia chutado.')
+Leaf.create(name: 'Renata Yumi Yoshii', gender: 'F', alive: 'S', birth: '1992-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Emilia Yoshii Nishimura', gender: 'F', alive: 'S', birth: '1960-4-22')
 Leaf.create(name: 'Roberto Nishimura', gender: 'M', alive: 'S')
-Leaf.create(name: 'Fernando Nishimura', gender: 'M', alive: 'S', birth: '1990-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Henrique Nishimura', gender: 'M', alive: 'S', birth: '1993-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Fernando Nishimura', gender: 'M', alive: 'S', birth: '1990-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Henrique Nishimura', gender: 'M', alive: 'S', birth: '1993-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Rosana Goncalves Yoshii', gender: 'F', alive: 'S')
 Leaf.create(name: 'Tatiana Goncalves Yoshii', gender: 'F', alive: 'S', birth: '1982-11-24')
-Leaf.create(name: 'Akemi Kinoshita', gender: 'F', alive: 'S', birth: '1947-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Akemi Kinoshita', gender: 'F', alive: 'S', birth: '1947-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Desconhecido', gender: 'M', alive: 'S')
 Leaf.create(name: 'Desconhecido', gender: 'M', alive: 'S')
 Leaf.create(name: 'Desconhecido', gender: 'M', alive: 'S')
@@ -319,10 +426,12 @@ Leaf.create(name: 'Larissa Kagohara', gender: 'F', alive: 'S')
 Leaf.create(name: 'Sato Yamazaki', gender: 'F', alive: 'S')
 Leaf.create(name: 'Sobei Yamazaki', gender: 'M', alive: 'S')
 Leaf.create(name: 'Roberto Itiro Yonekubo', gender: 'M', alive: 'N', birth: '1954-2-1', death: '1954-2-6')
-Leaf.create(name: 'Sumiko Murase', gender: 'F', alive: 'N', death: '1994-1-1', description: '村瀬 すみ子. Conhecido somente o ano de falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Sumiko Murase', gender: 'F', alive: 'N', death: '1994-1-1',
+            description: '村瀬 すみ子. Conhecido somente o ano de falecimento. Dia e mês chutado.')
 Leaf.create(name: 'Flora Uemoto Yonekubo', gender: 'F', alive: 'S', birth: '1939-1-20')
 Leaf.create(name: 'Desconhecida', gender: 'F', alive: 'S')
-Leaf.create(name: 'Suzi', gender: 'P', alive: 'N', birth: '1971-8-1', death: '1983-6-1', description: 'Adotada no Nippon Country Club em Arujá')
+Leaf.create(name: 'Suzi', gender: 'P', alive: 'N', birth: '1971-8-1', death: '1983-6-1',
+            description: 'Adotada no Nippon Country Club em Arujá')
 Leaf.create(name: 'Tibi', gender: 'P', alive: 'N', birth: '1972-6-1', death: '1974-9-1')
 Leaf.create(name: 'Marcelo Mitsuo Misu', gender: 'M', alive: 'S', birth: '1987-5-8')
 Leaf.create(name: 'Marcos Haruo Misu', gender: 'M', alive: 'S', birth: '1988-10-6')
@@ -331,8 +440,10 @@ Leaf.create(name: 'Hatsu Takada', gender: 'F', alive: 'N', description: 'ハツ'
 Leaf.create(name: 'Shunji Murase', gender: 'M', alive: 'S', description: '村瀬 俊二')
 Leaf.create(name: 'Osamu Murase', gender: 'M', alive: 'S', description: '村瀬 修')
 Leaf.create(name: 'Shigeki Murase', gender: 'M', alive: 'S', description: '村瀬 繁樹')
-Leaf.create(name: 'Tsuya Usui', gender: 'F', alive: 'N', birth: '1889-1-1', death: '1958-1-1', description: '臼井 ツヤ. Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Shinajirou Usui', gender: 'M', alive: 'N', birth: '1888-1-1', death: '1965-1-1', description: '臼井 科次郎. Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Tsuya Usui', gender: 'F', alive: 'N', birth: '1889-1-1', death: '1958-1-1',
+            description: '臼井 ツヤ. Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Shinajirou Usui', gender: 'M', alive: 'N', birth: '1888-1-1', death: '1965-1-1',
+            description: '臼井 科次郎. Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Toru Usui', gender: 'M', alive: 'S', birth: '1919-10-17', death: '2013-5-17', description: '臼井 徹')
 Leaf.create(name: 'Misao Usui', gender: 'F', alive: 'S', birth: '1923-5-3', death: '2020-6-24', description: '臼井 操')
 Leaf.create(name: 'Kenichi Usui', gender: 'M', alive: 'S', birth: '1948-6-8', description: '臼井 健一')
@@ -341,75 +452,130 @@ Leaf.create(name: 'Sumako Narita', gender: 'F', alive: 'S', birth: '1953-2-7', d
 Leaf.create(name: 'Daiki Usui', gender: 'M', alive: 'S', birth: '1981-12-31', description: '臼井 大貴')
 Leaf.create(name: 'Chie Usui', gender: 'F', alive: 'S', birth: '1983-11-6', description: '臼井 千恵')
 Leaf.create(name: 'Yasuyo Kondoh', gender: 'F', alive: 'S', birth: '1965-10-22', description: '臼井 恭代')
-Leaf.create(name: 'Sadako Usui', gender: 'F', alive: 'S', birth: '1924-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Shogo Usui', gender: 'M', alive: 'S', birth: '1930-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Hideo Usui', gender: 'M', alive: 'N', death: '1982-1-1', description: 'Conhecido somente o ano de falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Juji Usui', gender: 'M', alive: 'S', birth: '1927-1-1', description: '臼井 重治. Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Kazuko Kishi', gender: 'F', alive: 'S', birth: '1935-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yoshihiro Usui', gender: 'M', alive: 'S', birth: '1953-1-1', description: '臼井 克裕. Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Sadako Usui', gender: 'F', alive: 'S', birth: '1924-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Shogo Usui', gender: 'M', alive: 'S', birth: '1930-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Hideo Usui', gender: 'M', alive: 'N', death: '1982-1-1',
+            description: 'Conhecido somente o ano de falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Juji Usui', gender: 'M', alive: 'S', birth: '1927-1-1',
+            description: '臼井 重治. Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Kazuko Kishi', gender: 'F', alive: 'S', birth: '1935-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yoshihiro Usui', gender: 'M', alive: 'S', birth: '1953-1-1',
+            description: '臼井 克裕. Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Desconhecida', gender: 'F', alive: 'S')
-Leaf.create(name: 'Kazuo Kamiya', gender: 'M', alive: 'N', birth: '1925-1-1', death: '1995-1-1', description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Keiko Kamiya', gender: 'F', alive: 'S', birth: '1955-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Kazuo Kamiya', gender: 'M', alive: 'N', birth: '1925-1-1', death: '1995-1-1',
+            description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Keiko Kamiya', gender: 'F', alive: 'S', birth: '1955-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Desconhecido', gender: 'M', alive: 'S')
 Leaf.create(name: 'Outa Usui', gender: 'M', alive: 'S')
-Leaf.create(name: 'Tetsuhiro Honjoh', gender: 'M', alive: 'S', birth: '1961-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yumi Honjoh', gender: 'F', alive: 'S', birth: '1986-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yamato Honjoh', gender: 'F', alive: 'S', birth: '1986-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Tsuyako Fujimoto', gender: 'F', alive: 'S', birth: '1932-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Masaki Usui', gender: 'M', alive: 'S', birth: '1952-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Tetsuhiro Honjoh', gender: 'M', alive: 'S', birth: '1961-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yumi Honjoh', gender: 'F', alive: 'S', birth: '1986-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yamato Honjoh', gender: 'F', alive: 'S', birth: '1986-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Tsuyako Fujimoto', gender: 'F', alive: 'S', birth: '1932-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Masaki Usui', gender: 'M', alive: 'S', birth: '1952-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Masao Simonaka', gender: 'M', alive: 'S')
 Leaf.create(name: 'Itsuo Otake', gender: 'M', alive: 'N')
 Leaf.create(name: 'Kazuko Otake', gender: 'F', alive: 'N')
 Leaf.create(name: 'Kuwa Hashimoto', gender: 'F', alive: 'N')
-Leaf.create(name: 'Nobukichi Usui', gender: 'M', alive: 'N', death: '1907-1-1', description: 'Conhecido somente o ano de falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Mikie Gotoh', gender: 'F', alive: 'N', death: '1979-1-1', description: 'Conhecido somente o ano de falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Toshihiro Usui', gender: 'M', alive: 'S', birth: '1956-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Chikage Nishihara', gender: 'F', alive: 'S', birth: '1960-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yuh Usui', gender: 'M', alive: 'S', birth: '1988-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Mizuki Usui', gender: 'F', alive: 'S', birth: '1991-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Mami Usui', gender: 'F', alive: 'S', birth: '1957-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Nobukichi Usui', gender: 'M', alive: 'N', death: '1907-1-1',
+            description: 'Conhecido somente o ano de falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Mikie Gotoh', gender: 'F', alive: 'N', death: '1979-1-1',
+            description: 'Conhecido somente o ano de falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Toshihiro Usui', gender: 'M', alive: 'S', birth: '1956-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Chikage Nishihara', gender: 'F', alive: 'S', birth: '1960-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yuh Usui', gender: 'M', alive: 'S', birth: '1988-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Mizuki Usui', gender: 'F', alive: 'S', birth: '1991-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Mami Usui', gender: 'F', alive: 'S', birth: '1957-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Noriko Murase', gender: 'F', alive: 'S')
 Leaf.create(name: 'Masumi Murase', gender: 'F', alive: 'S')
 Leaf.create(name: 'Rueko Murase', gender: 'F', alive: 'S')
-Leaf.create(name: 'Ken Otake', gender: 'F', alive: 'N', birth: '1897-1-1', death: '1988-1-1', description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Yoshitaro Konno', gender: 'M', alive: 'N', birth: '1896-1-1', death: '1982-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Masako Konno', gender: 'F', alive: 'S', birth: '1922-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Keizo Satoh', gender: 'M', alive: 'N', birth: '1922-1-1', death: '2003-1-1', description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
-Leaf.create(name: 'Sayoko Konno', gender: 'F', alive: 'S', birth: '1926-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Zenjiroh Irokawa', gender: 'M', alive: 'N', birth: '1922-1-1', death: '1999-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Tomiko Konno', gender: 'F', alive: 'S', birth: '1928-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Rieki Konno', gender: 'M', alive: 'S', birth: '1934-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yukiko Ohgi', gender: 'F', alive: 'S', birth: '1936-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yoshinori Konno', gender: 'M', alive: 'S', birth: '1960-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Takako Satoh', gender: 'F', alive: 'S', birth: '1960-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Sinya Kanno', gender: 'M', alive: 'S', birth: '1994-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Eri Konno', gender: 'F', alive: 'S', birth: '1989-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Toshiko Konno', gender: 'F', alive: 'S', birth: '1958-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Tamotsu Kojima', gender: 'M', alive: 'S', birth: '1962-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Yuhto Kojima', gender: 'M', alive: 'S', birth: '1989-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Jiroh Konno', gender: 'M', alive: 'S', birth: '1937-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
-Leaf.create(name: 'Naoshi Konno', gender: 'M', alive: 'S', birth: '1940-1-1', description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Ken Otake', gender: 'F', alive: 'N', birth: '1897-1-1', death: '1988-1-1',
+            description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Yoshitaro Konno', gender: 'M', alive: 'N', birth: '1896-1-1', death: '1982-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Masako Konno', gender: 'F', alive: 'S', birth: '1922-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Keizo Satoh', gender: 'M', alive: 'N', birth: '1922-1-1', death: '2003-1-1',
+            description: 'Conhecido somente o ano de nascimento e falecimento. Dia e mês chutado.')
+Leaf.create(name: 'Sayoko Konno', gender: 'F', alive: 'S', birth: '1926-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Zenjiroh Irokawa', gender: 'M', alive: 'N', birth: '1922-1-1', death: '1999-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Tomiko Konno', gender: 'F', alive: 'S', birth: '1928-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Rieki Konno', gender: 'M', alive: 'S', birth: '1934-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yukiko Ohgi', gender: 'F', alive: 'S', birth: '1936-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yoshinori Konno', gender: 'M', alive: 'S', birth: '1960-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Takako Satoh', gender: 'F', alive: 'S', birth: '1960-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Sinya Kanno', gender: 'M', alive: 'S', birth: '1994-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Eri Konno', gender: 'F', alive: 'S', birth: '1989-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Toshiko Konno', gender: 'F', alive: 'S', birth: '1958-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Tamotsu Kojima', gender: 'M', alive: 'S', birth: '1962-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Yuhto Kojima', gender: 'M', alive: 'S', birth: '1989-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Jiroh Konno', gender: 'M', alive: 'S', birth: '1937-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
+Leaf.create(name: 'Naoshi Konno', gender: 'M', alive: 'S', birth: '1940-1-1',
+            description: 'Conhecido somente o ano de nascimento. Dia e mês chutado.')
 Leaf.create(name: 'Hermenegildo Gonçalo da Silva', gender: 'M', alive: 'S', birth: '1966-1-8')
 Leaf.create(name: 'Lilian Hiromi Job', gender: 'F', alive: 'S', birth: '1976-11-14')
 Leaf.create(name: 'Luna', gender: 'P', alive: 'S', birth: '2012-10-21')
 Leaf.create(name: 'Alice Tieco Todaki', gender: 'F', alive: 'S', birth: '1962-1-10')
-Leaf.create(name: 'Aroldo Yukio Todaki', gender: 'M', alive: 'S', birth: '1964-8-24', description: 'Natural de Inúbia Paulista SP')
-Leaf.create(name: 'Anderson Masao Todaki', gender: 'M', alive: 'S', birth: '1992-8-16', description: 'Natural da cidade de Hamakita na província de Shizuoka')
+Leaf.create(name: 'Aroldo Yukio Todaki', gender: 'M', alive: 'S', birth: '1964-8-24',
+            description: 'Natural de Inúbia Paulista SP')
+Leaf.create(name: 'Anderson Masao Todaki', gender: 'M', alive: 'S', birth: '1992-8-16',
+            description: 'Natural da cidade de Hamakita na província de Shizuoka')
 Leaf.create(name: 'Tomoyo Job', gender: 'M', alive: 'S', birth: '1932-7-6', description: 'Natural de Braúna- SP')
-Leaf.create(name: 'Elza Yoshico Job', gender: 'F', alive: 'N', birth: '1938-9-25', death: '2020-1-12', description: 'Natural de Presidente Prudente - SP')
-Leaf.create(name: 'Kiyoshi Job', gender: 'M', alive: 'N', birth: '1965-1-10', death: '1965-1-21', description: 'Jazigo YP-I-15 Cemitério Vale da Paz')
-Leaf.create(name: 'Shizuma Job', gender: 'M', alive: 'N', birth: '1889-12-26', description: '城 静馬 Na migração consta como sobrenome Shiro. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
-Leaf.create(name: 'Rumo Job', gender: 'F', alive: 'N', birth: '1891-10-26', description: '城 ルモ Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Elza Yoshico Job', gender: 'F', alive: 'N', birth: '1938-9-25', death: '2020-1-12',
+            description: 'Natural de Presidente Prudente - SP')
+Leaf.create(name: 'Kiyoshi Job', gender: 'M', alive: 'N', birth: '1965-1-10', death: '1965-1-21',
+            description: 'Jazigo YP-I-15 Cemitério Vale da Paz')
+Leaf.create(name: 'Shizuma Job', gender: 'M', alive: 'N', birth: '1889-12-26',
+            description: '城 静馬 Na migração consta como sobrenome Shiro. Partida de Kumamoto em 22/09/1928 e ' \
+            'chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Rumo Job', gender: 'F', alive: 'N', birth: '1891-10-26',
+            description: '城 ルモ Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
 Leaf.create(name: 'Minoru Miura', gender: 'M', alive: 'N')
 Leaf.create(name: 'Yuriko Miura', gender: 'F', alive: 'N')
 Leaf.create(name: 'Hiroyuki Todaki', gender: 'M', alive: 'S')
 Leaf.create(name: 'Sadako Todaki', gender: 'F', alive: 'S')
-Leaf.create(name: 'Alessandra Yukari Todaki', gender: 'F', alive: 'S', birth: '1994-11-12', description: 'Natural da cidade de Hamakita na província de Shizuoka')
-Leaf.create(name: 'Chiyo Shinozuka', gender: 'F', alive: 'S', birth: '1925-4-4', death: '1987-1-11', description: '篠塚 ちよ. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru. Conhecida como Chiyoko. Cemitério Vale da Paz- Diadema')
-Leaf.create(name: 'Yasunaga Yokoyama', gender: 'M', alive: 'N', birth: '1926-7-2', description: '橫山康長. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Tama Shinozuka', gender: 'F', alive: 'N', birth: '1914-1-24', death: '1970-5-25', description: '篠塚 タマ. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru. Nasc 24/01/1914? Cemitério Vale da Paz - Diadema')
-Leaf.create(name: 'Masakatsu Shinozuka', gender: 'M', alive: 'N', birth: '1909-3-31', death: '2001-9-2', description: '石元 正勝. Família Ishimoto. Cemitério Vale da Paz - Diadema')
-Leaf.create(name: 'Kiyoko Nagatomo', gender: 'F', alive: 'N', description: '城 嬌子. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Alessandra Yukari Todaki', gender: 'F', alive: 'S', birth: '1994-11-12',
+            description: 'Natural da cidade de Hamakita na província de Shizuoka')
+Leaf.create(name: 'Chiyo Shinozuka', gender: 'F', alive: 'S', birth: '1925-4-4', death: '1987-1-11',
+            description: '篠塚 ちよ. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii ' \
+            'Maru. Conhecida como Chiyoko. Cemitério Vale da Paz - Diadema')
+Leaf.create(name: 'Yasunaga Yokoyama', gender: 'M', alive: 'N', birth: '1926-7-2',
+            description: '橫山康長. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Tama Shinozuka', gender: 'F', alive: 'N', birth: '1914-1-24', death: '1970-5-25',
+            description: '篠塚 タマ. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii ' \
+            'Maru. Nasc 24/01/1914? Cemitério Vale da Paz - Diadema')
+Leaf.create(name: 'Masakatsu Shinozuka', gender: 'M', alive: 'N', birth: '1909-3-31', death: '2001-9-2',
+            description: '石元 正勝. Família Ishimoto. Cemitério Vale da Paz - Diadema')
+Leaf.create(name: 'Kiyoko Nagatomo', gender: 'F', alive: 'N',
+            description: '城 嬌子. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
 Leaf.create(name: 'Sadami Nagatomo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Fumie Jyo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Yoshinobu Jyo', gender: 'M', alive: 'N')
@@ -420,17 +586,24 @@ Leaf.create(name: 'Masako Nagatomo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Masahiro Nagatomo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Mario Jyo', gender: 'M', alive: 'N')
 Leaf.create(name: 'Mery Jyo', gender: 'F', alive: 'S')
-Leaf.create(name: 'Yumio Jyo', gender: 'M', alive: 'N', birth: '1919-1-3', description: '城 弓桑. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Yumio Jyo', gender: 'M', alive: 'N', birth: '1919-1-3',
+            description: '城 弓桑. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
 Leaf.create(name: 'Mitsue Jyo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Jorge Matsumura', gender: 'M', alive: 'N')
-Leaf.create(name: 'Aparecida Mitiko Matsumura', gender: 'F', alive: 'S', birth: '1948-1-1', description: 'Data de nascimento chutada')
+Leaf.create(name: 'Aparecida Mitiko Matsumura', gender: 'F', alive: 'S', birth: '1948-1-1',
+            description: 'Data de nascimento chutada')
 Leaf.create(name: 'Daniel Matsumura', gender: 'M', alive: 'S', birth: '1980-4-9')
 Leaf.create(name: 'Carolina de Fatima Matsumura', gender: 'F', alive: 'S', birth: '1981-9-16')
 Leaf.create(name: 'Edgard Grossi', gender: 'M', alive: 'S', birth: '1982-8-7', description: 'Natural de São Paulo')
-Leaf.create(name: 'Cinthia Jyo Grossi', gender: 'F', alive: 'S', birth: '1984-1-17', description: 'Cinthia Jyo Matsumura')
-Leaf.create(name: 'Naomi Grossi Matsumura', gender: 'F', alive: 'S', birth: '2015-9-24', description: 'Natural de Bragança Paulista')
+Leaf.create(name: 'Cinthia Jyo Grossi', gender: 'F', alive: 'S', birth: '1984-1-17',
+            description: 'Cinthia Jyo Matsumura')
+Leaf.create(name: 'Naomi Grossi Matsumura', gender: 'F', alive: 'S', birth: '2015-9-24',
+            description: 'Natural de Bragança Paulista')
 Leaf.create(name: 'Aline Yumi Cerutte Matsumura', gender: 'F', alive: 'S', birth: '2001-3-10')
-Leaf.create(name: 'Hiro Saito', gender: 'F', alive: 'S', birth: '1912-11-26', death: '1988-12-31', description: '城 尋. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru. Conhecida como Tihiro.')
+Leaf.create(name: 'Hiro Saito', gender: 'F', alive: 'S', birth: '1912-11-26', death: '1988-12-31',
+            description: '城 尋. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru. Conhecida como Tihiro.')
 Leaf.create(name: 'Takashi Saito', gender: 'M', alive: 'N')
 Leaf.create(name: 'Seiki Saito', gender: 'M', alive: 'N')
 Leaf.create(name: 'Keiko Saito', gender: 'M', alive: 'N')
@@ -438,7 +611,9 @@ Leaf.create(name: 'Kouki Saito', gender: 'M', alive: 'N')
 Leaf.create(name: 'Kou Saito', gender: 'M', alive: 'S')
 Leaf.create(name: 'Tamaki Saito', gender: 'M', alive: 'S')
 Leaf.create(name: 'Sadako Saito', gender: 'F', alive: 'S')
-Leaf.create(name: 'Nobuo Jyo', gender: 'M', alive: 'N', birth: '1915-3-16', death: '1982-1-13', description: '城 信夫. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Nobuo Jyo', gender: 'M', alive: 'N', birth: '1915-3-16', death: '1982-1-13',
+            description: '城 信夫. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
 Leaf.create(name: 'Mitsue Jyo', gender: 'F', alive: 'N', birth: '1922-1-1', death: '1997-10-21')
 Leaf.create(name: 'Antonio Coocei Jyo', gender: 'M', alive: 'S', birth: '1946-10-13')
 Leaf.create(name: 'Tereza Hatsuko Jyo', gender: 'F', alive: 'S', birth: '1944-2-9')
@@ -463,44 +638,58 @@ Leaf.create(name: 'Aiko', gender: 'F', alive: 'S')
 Leaf.create(name: 'Akemi', gender: 'F', alive: 'S')
 Leaf.create(name: 'Akemi', gender: 'F', alive: 'S')
 Leaf.create(name: 'Akiko Suzuki', gender: 'F', alive: 'S')
-Leaf.create(name: 'Alexandra Miyuki Teramoto', gender: 'F', alive: 'S', birth: '1981-11-17', description: 'Natural de São Paulo')
+Leaf.create(name: 'Alexandra Miyuki Teramoto', gender: 'F', alive: 'S', birth: '1981-11-17',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Alexandre Fukushima', gender: 'M', alive: 'S')
 Leaf.create(name: 'Alexandro Simabuco', gender: 'M', alive: 'S', birth: '1980-11-18', description: 'Natural do Paraná')
-Leaf.create(name: 'Alice de Freitas Jyo Malfatti', gender: 'F', alive: 'S', birth: '2017-1-2', description: 'Natural de São Paulo')
-Leaf.create(name: 'Alice Masami Jyo Rodrigues', gender: 'F', alive: 'S', birth: '1963-10-30', description: 'Natural de São Paulo')
-Leaf.create(name: 'Alice Takako Kaneko Abe', gender: 'F', alive: 'S', birth: '1954-12-5', description: 'Natural de Marialva - PR')
+Leaf.create(name: 'Alice de Freitas Jyo Malfatti', gender: 'F', alive: 'S', birth: '2017-1-2',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Alice Masami Jyo Rodrigues', gender: 'F', alive: 'S', birth: '1963-10-30',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Alice Takako Kaneko Abe', gender: 'F', alive: 'S', birth: '1954-12-5',
+            description: 'Natural de Marialva - PR')
 Leaf.create(name: 'Alice Tokiko Mikado', gender: 'F', alive: 'S', birth: '1959-7-22')
 Leaf.create(name: 'Aline Kaneko', gender: 'F', alive: 'S', birth: '1990-4-13', description: 'Natural de São Paulo')
-Leaf.create(name: 'Amélia Makiko Jyo', gender: 'F', alive: 'S', birth: '1954-7-10', description: 'Natural de Marialva - PR')
+Leaf.create(name: 'Amélia Makiko Jyo', gender: 'F', alive: 'S', birth: '1954-7-10',
+            description: 'Natural de Marialva - PR')
 Leaf.create(name: 'Ana de Oliveira Neto Mikado', gender: 'F', alive: 'S')
 Leaf.create(name: 'Antonio Hajime Takazono', gender: 'M', alive: 'S', birth: '1942-3-8')
-Leaf.create(name: 'Antonio Masahiro Jyo', gender: 'M', alive: 'S', birth: '1957-5-5', description: 'Natural de São Paulo')
-Leaf.create(name: 'Augusto Tacao Jyo', gender: 'M', alive: 'S', birth: '1961-8-15', description: 'Natural de São Paulo')
+Leaf.create(name: 'Antonio Masahiro Jyo', gender: 'M', alive: 'S', birth: '1957-5-5',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Augusto Tacao Jyo', gender: 'M', alive: 'S', birth: '1961-8-15',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Aya', gender: 'F', alive: 'S')
 Leaf.create(name: 'Caio Tetsuo Jyo', gender: 'M', alive: 'S', birth: '2005-7-30')
-Leaf.create(name: 'Camila Hiromi Abe', gender: 'F', alive: 'S', birth: '1983-12-20', description: 'Natural de São Paulo')
+Leaf.create(name: 'Camila Hiromi Abe', gender: 'F', alive: 'S', birth: '1983-12-20',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Carlos Eugênio Malfatti', gender: 'M', alive: 'N')
 Leaf.create(name: 'Carlos Eugênio Malfatti Júnior', gender: 'M', alive: 'S', birth: '1985-2-6')
 Leaf.create(name: 'Carlos Joji Ueno', gender: 'M', alive: 'S', birth: '1953-2-1')
 Leaf.create(name: 'Carol Nagatomo', gender: 'F', alive: 'S')
-Leaf.create(name: 'Carolina Marie Tagami', gender: 'F', alive: 'S', birth: '2002-4-12', description: 'Natural de São Paulo')
-Leaf.create(name: 'Cecília Mieko Kaneko', gender: 'F', alive: 'S', birth: '1961-3-16', description: 'Natural de São Paulo')
+Leaf.create(name: 'Carolina Marie Tagami', gender: 'F', alive: 'S', birth: '2002-4-12',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Cecília Mieko Kaneko', gender: 'F', alive: 'S', birth: '1961-3-16',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Cintia Biáforo Jyo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Cristiane Liuko Jyo', gender: 'F', alive: 'S', birth: '1965-9-10')
 Leaf.create(name: 'Daniel Akira Nagatomo', gender: 'M', alive: 'S')
-Leaf.create(name: 'Daniel Hideki Ueno', gender: 'M', alive: 'S', birth: '1981-2-23', description: 'Natural de São Paulo')
+Leaf.create(name: 'Daniel Hideki Ueno', gender: 'M', alive: 'S', birth: '1981-2-23',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Daniella Mello', gender: 'F', alive: 'S')
 Leaf.create(name: 'Desconhecido Eishima', gender: 'M', alive: 'N', description: 'Natural do Japão')
 Leaf.create(name: 'Desconhecida Mikado', gender: 'F', alive: 'S')
-Leaf.create(name: 'Dirce Kazuko Kaneko', gender: 'F', alive: 'S', birth: '1962-9-26', description: 'Natural de São Paulo')
+Leaf.create(name: 'Dirce Kazuko Kaneko', gender: 'F', alive: 'S', birth: '1962-9-26',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Drayton', gender: 'M', alive: 'S')
 Leaf.create(name: 'Dylan Nishina', gender: 'M', alive: 'S', birth: '2002-1-28', description: 'Natural de São Paulo')
 Leaf.create(name: 'Eby Hisayo Kaneko', gender: 'F', alive: 'S', birth: '1956-1-27')
 Leaf.create(name: 'Desconhecido Matsuda', gender: 'M', alive: 'N')
 Leaf.create(name: 'Eduardo Hideki Matsuda', gender: 'M', alive: 'S', birth: '1985-9-16')
-Leaf.create(name: 'Eduardo Seiji Nishida', gender: 'M', alive: 'S', birth: '2013-4-25', description: 'Natural de São Paulo')
+Leaf.create(name: 'Eduardo Seiji Nishida', gender: 'M', alive: 'S', birth: '2013-4-25',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Elido Augusto Vital', gender: 'M', alive: 'S')
-Leaf.create(name: 'Elisa Suemi Kaneko', gender: 'F', alive: 'S', birth: '1966-3-12', description: 'Natural de São Paulo')
+Leaf.create(name: 'Elisa Suemi Kaneko', gender: 'F', alive: 'S', birth: '1966-3-12',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Eliza Satiyo Motoike', gender: 'F', alive: 'S')
 Leaf.create(name: 'Eliza Tiemi Takeda', gender: 'F', alive: 'N')
 Leaf.create(name: 'Elizabeth Miyagusuku', gender: 'F', alive: 'S', birth: '1905-5-19')
@@ -509,29 +698,37 @@ Leaf.create(name: 'Eric Eiji Jyo', gender: 'M', alive: 'S', birth: '2004-8-20')
 Leaf.create(name: 'Érika Kaneko', gender: 'F', alive: 'S', birth: '1988-2-12', description: 'Natural de São Paulo')
 Leaf.create(name: 'Fabiana', gender: 'F', alive: 'S')
 Leaf.create(name: 'Fabio', gender: 'M', alive: 'S')
-Leaf.create(name: 'Fábio Akira Kaneko', gender: 'M', alive: 'S', birth: '2000-2-28', description: 'Natural de São Paulo')
+Leaf.create(name: 'Fábio Akira Kaneko', gender: 'M', alive: 'S', birth: '2000-2-28',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Fabio Hideki Mikado', gender: 'M', alive: 'S')
-Leaf.create(name: 'Fernando Takashi Kaneko', gender: 'M', alive: 'S', birth: '2003-3-28', description: 'Natural de São Paulo')
+Leaf.create(name: 'Fernando Takashi Kaneko', gender: 'M', alive: 'S', birth: '2003-3-28',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Fumiko Tanaka', gender: 'F', alive: 'S')
 Leaf.create(name: 'Fusako Takeshita', gender: 'F', alive: 'S')
-Leaf.create(name: 'Gabriela Yumi Rodrigues', gender: 'F', alive: 'S', birth: '2000-3-21', description: 'Natural de São Paulo')
+Leaf.create(name: 'Gabriela Yumi Rodrigues', gender: 'F', alive: 'S', birth: '2000-3-21',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Gerson Koichi Miike', gender: 'M', alive: 'S', birth: '1970-12-20')
 Leaf.create(name: 'Giovanna Ayumi da Silva', gender: 'F', alive: 'S', birth: '2014-3-11')
 Leaf.create(name: 'Guilherme Erick Seiji Takazono', gender: 'M', alive: 'S', birth: '2006-8-19')
-Leaf.create(name: 'Gustavo Hideaki Simabuco', gender: 'M', alive: 'S', birth: '2006-10-30', description: 'Natural de Curitiba - PR')
+Leaf.create(name: 'Gustavo Hideaki Simabuco', gender: 'M', alive: 'S', birth: '2006-10-30',
+            description: 'Natural de Curitiba - PR')
 Leaf.create(name: 'Gustavo Nagatomo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Helena Midori Kaneko', gender: 'F', alive: 'S', birth: '1949-1-25')
 Leaf.create(name: 'Heloisa Fukushima', gender: 'F', alive: 'S')
 Leaf.create(name: 'Hideki Mikado', gender: 'M', alive: 'S', birth: '1961-11-16')
-Leaf.create(name: 'Jhonny Makoto Abe', gender: 'M', alive: 'S', birth: '2011-5-27', description: 'Natural de Pilar do Sul - SP')
+Leaf.create(name: 'Jhonny Makoto Abe', gender: 'M', alive: 'S', birth: '2011-5-27',
+            description: 'Natural de Pilar do Sul - SP')
 Leaf.create(name: 'João Manabu Kuamoto', gender: 'M', alive: 'S')
 Leaf.create(name: 'Jorge Tagami', gender: 'M', alive: 'S')
 Leaf.create(name: 'Jorge Yuzuru Teramoto', gender: 'M', alive: 'S', birth: '1948-8-1')
-Leaf.create(name: 'José Masayuki Kaneko', gender: 'M', alive: 'S', birth: '1953-1-1', description: 'Natural de Marialva - PR')
+Leaf.create(name: 'José Masayuki Kaneko', gender: 'M', alive: 'S', birth: '1953-1-1',
+            description: 'Natural de Marialva - PR')
 Leaf.create(name: 'José Mikado', gender: 'M', alive: 'N', description: 'Natural do Japão')
 Leaf.create(name: 'Júlia Akemi', gender: 'F', alive: 'S')
-Leaf.create(name: 'Julia Mei Biaforo Jyo', gender: 'F', alive: 'S', birth: '2007-5-12', description: 'Natural de São Paulo')
-Leaf.create(name: 'Juliana Akemi Ueno', gender: 'F', alive: 'S', birth: '1984-3-14', description: 'Natural de São Paulo')
+Leaf.create(name: 'Julia Mei Biaforo Jyo', gender: 'F', alive: 'S', birth: '2007-5-12',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Juliana Akemi Ueno', gender: 'F', alive: 'S', birth: '1984-3-14',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Juliana de Freitas Malfatti', gender: 'F', alive: 'S')
 Leaf.create(name: 'Julio Nishida', gender: 'M', alive: 'S', birth: '2004-5-7', description: 'Natural do Japão')
 Leaf.create(name: 'Jun', gender: 'M', alive: 'S')
@@ -550,26 +747,35 @@ Leaf.create(name: 'Kyoji Matsuda', gender: 'M', alive: 'S')
 Leaf.create(name: 'Lauro Eishima', gender: 'M', alive: 'S', birth: '1944-8-1')
 Leaf.create(name: 'Leonardo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Letícia Jyo Pereira', gender: 'F', alive: 'S', birth: '1995-8-11')
-Leaf.create(name: 'Lilian Mayumi Nishida', gender: 'F', alive: 'S', birth: '1983-6-7', description: 'Natural de São Paulo')
+Leaf.create(name: 'Lilian Mayumi Nishida', gender: 'F', alive: 'S', birth: '1983-6-7',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Lincoln Koiti Jyo', gender: 'M', alive: 'S')
-Leaf.create(name: 'Linton Hiroki Abe', gender: 'M', alive: 'S', birth: '1951-7-29', description: 'Natural de Bastos - SP')
+Leaf.create(name: 'Linton Hiroki Abe', gender: 'M', alive: 'S', birth: '1951-7-29',
+            description: 'Natural de Bastos - SP')
 Leaf.create(name: 'Lua Fukushima', gender: 'F', alive: 'S')
 Leaf.create(name: 'Luci', gender: 'F', alive: 'S')
 Leaf.create(name: 'Lucimeire Suzuki', gender: 'F', alive: 'S', birth: '1972-12-24')
 Leaf.create(name: 'Luis Jyo', gender: 'M', alive: 'S', birth: '1944-9-19')
 Leaf.create(name: 'Luiz', gender: 'M', alive: 'S')
-Leaf.create(name: 'Luiza Naoko Teramoto', gender: 'F', alive: 'S', birth: '1951-8-26', description: 'Natural de Marialva - PR')
+Leaf.create(name: 'Luiza Naoko Teramoto', gender: 'F', alive: 'S', birth: '1951-8-26',
+            description: 'Natural de Marialva - PR')
 Leaf.create(name: 'Mana Fukushima', gender: 'F', alive: 'S')
 Leaf.create(name: 'Marcel Yuji Ueno', gender: 'M', alive: 'S', birth: '1982-10-5', description: 'Natural de São Paulo')
-Leaf.create(name: 'Marcella Monaco Jyo', gender: 'F', alive: 'S', birth: '1990-1-19', description: 'Natural de São Paulo')
-Leaf.create(name: 'Marcelo Takeshi Kaneko', gender: 'M', alive: 'S', birth: '1992-9-27', description: 'Natural de São Paulo')
+Leaf.create(name: 'Marcella Monaco Jyo', gender: 'F', alive: 'S', birth: '1990-1-19',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Marcelo Takeshi Kaneko', gender: 'M', alive: 'S', birth: '1992-9-27',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Marcia M. Okumura Jyo', gender: 'F', alive: 'S', birth: '1962-10-1')
 Leaf.create(name: 'Márcia Monaco', gender: 'F', alive: 'S', birth: '1960-4-2', description: 'Natural de São Paulo')
-Leaf.create(name: 'Márcio Eiiti Kaneko', gender: 'M', alive: 'S', birth: '1977-4-30', description: 'Natural de São Paulo')
+Leaf.create(name: 'Márcio Eiiti Kaneko', gender: 'M', alive: 'S', birth: '1977-4-30',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Marcio Hideki Nishida', gender: 'M', alive: 'S', birth: '1978-3-16')
-Leaf.create(name: 'Marcos Kenji Kaneko', gender: 'M', alive: 'S', birth: '1983-5-10', description: 'Natural de São Paulo')
-Leaf.create(name: 'Mariana Tiemi Matsuda', gender: 'F', alive: 'S', birth: '1990-7-10', description: 'Natural de São Paulo')
-Leaf.create(name: 'Mariane Yumi Abe', gender: 'F', alive: 'S', birth: '2013-1-8', description: 'Natural de Pilar do Sul - SP')
+Leaf.create(name: 'Marcos Kenji Kaneko', gender: 'M', alive: 'S', birth: '1983-5-10',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Mariana Tiemi Matsuda', gender: 'F', alive: 'S', birth: '1990-7-10',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Mariane Yumi Abe', gender: 'F', alive: 'S', birth: '2013-1-8',
+            description: 'Natural de Pilar do Sul - SP')
 Leaf.create(name: 'Marianna Emy Takazono', gender: 'F', alive: 'S')
 Leaf.create(name: 'Marina Ayumi Jyo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Marli Fukushima', gender: 'F', alive: 'S')
@@ -588,53 +794,73 @@ Leaf.create(name: 'Mitsuko Matsuda', gender: 'F', alive: 'S')
 Leaf.create(name: 'Mizue', gender: 'F', alive: 'S')
 Leaf.create(name: 'Mizue Jyo', gender: 'F', alive: 'S', birth: '1953-2-20')
 Leaf.create(name: 'Mombe Wakamori', gender: 'M', alive: 'N')
-Leaf.create(name: 'Natália Yurie Jyo', gender: 'F', alive: 'S', birth: '1990-2-24', description: 'Natural de São Paulo')
+Leaf.create(name: 'Natália Yurie Jyo', gender: 'F', alive: 'S', birth: '1990-2-24',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Nelson Masamitsu Mikado', gender: 'M', alive: 'S', birth: '1952-8-9')
 Leaf.create(name: 'Nelson Masanori Jyo', gender: 'M', alive: 'S', birth: '1960-4-26')
-Leaf.create(name: 'Neusa Hetsuko Kaneko Ueno', gender: 'F', alive: 'S', birth: '1958-11-19', description: 'Natural de São Paulo')
+Leaf.create(name: 'Neusa Hetsuko Kaneko Ueno', gender: 'F', alive: 'S', birth: '1958-11-19',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Newton Hideki Suzuki', gender: 'M', alive: 'N')
 Leaf.create(name: 'Nobuko Kaneko', gender: 'F', alive: 'S', birth: '1948-7-3')
 Leaf.create(name: 'Noriaki Jyo', gender: 'M', alive: 'S')
-Leaf.create(name: 'Norisato Jyo', gender: 'M', alive: 'S', birth: '1923-9-18', death: '2001-1-1', description: '城 徳達. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru. Conhecido somente o ano do falecimento')
-Leaf.create(name: 'Oscar Kiyomi Kaneko', gender: 'M', alive: 'S', birth: '1956-8-18', description: 'Natural de São Paulo')
-Leaf.create(name: 'Paulo Akio Kaneko', gender: 'M', alive: 'S', birth: '1950-2-23', description: 'Natural de Marialva - PR')
+Leaf.create(name: 'Norisato Jyo', gender: 'M', alive: 'S', birth: '1923-9-18', death: '2001-1-1',
+            description: '城 徳達. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru. Conhecido somente o ano do falecimento')
+Leaf.create(name: 'Oscar Kiyomi Kaneko', gender: 'M', alive: 'S', birth: '1956-8-18',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Paulo Akio Kaneko', gender: 'M', alive: 'S', birth: '1950-2-23',
+            description: 'Natural de Marialva - PR')
 Leaf.create(name: 'Paulo Eduardo Maia Lourenço', gender: 'M', alive: 'S')
 Leaf.create(name: 'Paulo Mikado', gender: 'M', alive: 'S', birth: '1957-1-1')
 Leaf.create(name: 'Paulo Takaaki Jyo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Priscila Mayumi Seki Mikado', gender: 'F', alive: 'S')
 Leaf.create(name: 'Rachel Moraes', gender: 'F', alive: 'S')
-Leaf.create(name: 'Rafael Seiki Teramoto', gender: 'M', alive: 'S', birth: '1983-1-5', description: 'Natural de São Paulo')
+Leaf.create(name: 'Rafael Seiki Teramoto', gender: 'M', alive: 'S', birth: '1983-1-5',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Rafael Yukio Jyo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rafaela Nagatomo', gender: 'F', alive: 'S')
-Leaf.create(name: 'Renato Satio Kaneko', gender: 'M', alive: 'S', birth: '1988-4-6', description: 'Natural de São Paulo')
+Leaf.create(name: 'Renato Satio Kaneko', gender: 'M', alive: 'S', birth: '1988-4-6',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Renato Seiji Eishima', gender: 'M', alive: 'S', birth: '1983-12-31')
 Leaf.create(name: 'Ricardo', gender: 'M', alive: 'S')
-Leaf.create(name: 'Ricardo Makoto Abe', gender: 'M', alive: 'S', birth: '1981-5-1', description: 'Natural de São Paulo')
+Leaf.create(name: 'Ricardo Makoto Abe', gender: 'M', alive: 'S', birth: '1981-5-1',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Ricardo Seki Mikado', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rodrigo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rodrigo Hajime Takazono', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rogério Radyme Takazono', gender: 'M', alive: 'S', birth: '1972-9-17')
 Leaf.create(name: 'Ronaldo Fukushima', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rosa Kazuko Mikado', gender: 'F', alive: 'S', birth: '1950-9-18')
-Leaf.create(name: 'Rosa Kimie Kaneko', gender: 'F', alive: 'S', birth: '1955-11-8', description: 'Natural de Dracena - SP')
+Leaf.create(name: 'Rosa Kimie Kaneko', gender: 'F', alive: 'S', birth: '1955-11-8',
+            description: 'Natural de Dracena - SP')
 Leaf.create(name: 'Rosangela Eiko Takazono', gender: 'F', alive: 'S', birth: '1973-11-13')
 Leaf.create(name: 'Rose', gender: 'F', alive: 'S')
 Leaf.create(name: 'Roseli Mie Jyo', gender: 'F', alive: 'S')
-Leaf.create(name: 'Rubens de Oliveira Rodrigues', gender: 'M', alive: 'S', birth: '1963-6-26', description: 'Natural de São Paulo')
+Leaf.create(name: 'Rubens de Oliveira Rodrigues', gender: 'M', alive: 'S', birth: '1963-6-26',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Rubens Haruo Eishima', gender: 'M', alive: 'S', birth: '1982-8-25')
 Leaf.create(name: 'Sandra dos Santos Alencar', gender: 'F', alive: 'S', birth: '1980-1-12')
 Leaf.create(name: 'Sandra Sayuri Suzuki', gender: 'F', alive: 'S', description: 'Niver 23/02')
-Leaf.create(name: 'Sachiko Jyo Mikado', gender: 'F', alive: 'S', birth: '1926-2-20', description: '城 幸子. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Sachiko Jyo Mikado', gender: 'F', alive: 'S', birth: '1926-2-20',
+            description: '城 幸子. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
 Leaf.create(name: 'Satoshi Fukushima', gender: 'M', alive: 'S')
-Leaf.create(name: 'Selma Kaneko', gender: 'F', alive: 'S', birth: '1977-11-29', description: 'Natural de Pereira Barreto - SP')
+Leaf.create(name: 'Selma Kaneko', gender: 'F', alive: 'S', birth: '1977-11-29',
+            description: 'Natural de Pereira Barreto - SP')
 Leaf.create(name: 'Sergio Bernardy', gender: 'M', alive: 'S')
 Leaf.create(name: 'Shinji', gender: 'M', alive: 'S')
-Leaf.create(name: 'Shizuori Jyo', gender: 'M', alive: 'S', birth: '1909-11-18', description: '城 静織. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
-Leaf.create(name: 'Sophia Sayuri Abe', gender: 'F', alive: 'S', birth: '2003-5-8', description: 'Natural de Marialva - PR')
-Leaf.create(name: 'Suzana Yassue Eishima', gender: 'F', alive: 'S', birth: '1985-6-3', description: 'Natural de São Paulo')
-Leaf.create(name: 'Tadashi Kaneko', gender: 'M', alive: 'S', birth: '1948-1-26', description: 'Natural de Marialva - PR')
+Leaf.create(name: 'Shizuori Jyo', gender: 'M', alive: 'S', birth: '1909-11-18',
+            description: '城 静織. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
+Leaf.create(name: 'Sophia Sayuri Abe', gender: 'F', alive: 'S', birth: '2003-5-8',
+            description: 'Natural de Marialva - PR')
+Leaf.create(name: 'Suzana Yassue Eishima', gender: 'F', alive: 'S', birth: '1985-6-3',
+            description: 'Natural de São Paulo')
+Leaf.create(name: 'Tadashi Kaneko', gender: 'M', alive: 'S', birth: '1948-1-26',
+            description: 'Natural de Marialva - PR')
 Leaf.create(name: 'Takashi', gender: 'M', alive: 'S')
-Leaf.create(name: 'Takefumi Kaneko', gender: 'M', alive: 'N', birth: '1923-6-4', death: '2005-11-26', description: 'Natural do Japão')
+Leaf.create(name: 'Takefumi Kaneko', gender: 'M', alive: 'N', birth: '1923-6-4', death: '2005-11-26',
+            description: 'Natural do Japão')
 Leaf.create(name: 'Takeshi', gender: 'M', alive: 'S')
 Leaf.create(name: 'Takeshi Nagatomo', gender: 'M', alive: 'S')
 Leaf.create(name: 'Takio Matsuda', gender: 'M', alive: 'S')
@@ -642,24 +868,30 @@ Leaf.create(name: 'Tamae Wakamori', gender: 'F', alive: 'N')
 Leaf.create(name: 'Teruko Jyo Matsuda', gender: 'F', alive: 'S')
 Leaf.create(name: 'Theo Seiji Jyo', gender: 'M', alive: 'S', birth: '2008-5-30', description: 'Natural de São Paulo')
 Leaf.create(name: 'Thiago Masao Mikado', gender: 'M', alive: 'S', birth: '1985-1-29')
-Leaf.create(name: 'Thiago Tetsuya Rodrigues', gender: 'M', alive: 'S', birth: '1997-8-27', description: 'Natural de São Paulo')
+Leaf.create(name: 'Thiago Tetsuya Rodrigues', gender: 'M', alive: 'S', birth: '1997-8-27',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Tiemi', gender: 'F', alive: 'S')
 Leaf.create(name: 'Toshiko Eishima', gender: 'F', alive: 'N', description: 'Natural do Japão')
-Leaf.create(name: 'Toshiko Jyo', gender: 'F', alive: 'S', birth: '1920-10-23', death: '2017-1-1', description: 'Natural do Japão - Conhecido somente o ano do falecimento')
+Leaf.create(name: 'Toshiko Jyo', gender: 'F', alive: 'S', birth: '1920-10-23', death: '2017-1-1',
+            description: 'Natural do Japão - Conhecido somente o ano do falecimento')
 Leaf.create(name: 'Toyoko Takeshita', gender: 'F', alive: 'S')
 Leaf.create(name: 'Tsuneto Takeshita', gender: 'M', alive: 'N')
 Leaf.create(name: 'Valentino Nishina', gender: 'M', alive: 'S', birth: '1962-9-1')
 Leaf.create(name: 'Vanessa Mieko Tagami', gender: 'F', alive: 'S', birth: '1997-1-24', description: 'Natural do Japão')
 Leaf.create(name: 'Victor Fukushima', gender: 'M', alive: 'S')
-Leaf.create(name: 'Victor Kaneko Matsuno', gender: 'M', alive: 'S', birth: '1990-4-3', description: 'Natural de São Paulo')
+Leaf.create(name: 'Victor Kaneko Matsuno', gender: 'M', alive: 'S', birth: '1990-4-3',
+            description: 'Natural de São Paulo')
 Leaf.create(name: 'Yasmim Sayuri', gender: 'F', alive: 'S')
 Leaf.create(name: 'Yasmin Tiemi Mikado Lourenço', gender: 'F', alive: 'S')
 Leaf.create(name: 'Yoshiaki Mikado', gender: 'M', alive: 'N', birth: '1923-3-27', death: '1986-7-23')
 Leaf.create(name: 'Yoshie Nagatomo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Yoshie Takazono', gender: 'F', alive: 'S', birth: '1948-10-23')
-Leaf.create(name: 'Yoshiko Jyo', gender: 'F', alive: 'N', birth: '1929-10-5', death: '2013-1-31', description: 'Natural do Japão')
+Leaf.create(name: 'Yoshiko Jyo', gender: 'F', alive: 'N', birth: '1929-10-5', death: '2013-1-31',
+            description: 'Natural do Japão')
 Leaf.create(name: 'Yudi Gunter Jyo Bernardy', gender: 'M', alive: 'S')
-Leaf.create(name: 'Yuiko Kaneko', gender: 'F', alive: 'S', birth: '1921-3-20', death: '2002-5-5', description: '城 ユイ. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio Hawaii Maru')
+Leaf.create(name: 'Yuiko Kaneko', gender: 'F', alive: 'S', birth: '1921-3-20', death: '2002-5-5',
+            description: '城 ユイ. Partida de Kumamoto em 22/09/1928 e chegada em Santos em 12/11/1928 no navio ' \
+            'Hawaii Maru')
 Leaf.create(name: 'Yukio', gender: 'M', alive: 'S')
 Leaf.create(name: 'Yutaka Yamaniha', gender: 'M', alive: 'S')
 Leaf.create(name: 'Yuzo', gender: 'M', alive: 'S')
@@ -669,13 +901,19 @@ Leaf.create(name: 'Oswaldo Makoto Kuamoto', gender: 'M', alive: 'S')
 Leaf.create(name: 'Rogerio Nagatomo', gender: 'M', alive: 'S')
 Leaf.create(name: 'João Fernandes', gender: 'M', alive: 'S')
 Leaf.create(name: 'Madalena Fernandes Mello', gender: 'F', alive: 'S')
-Leaf.create(name: 'Katsujiro Omi', gender: 'M', alive: 'N', birth: '1917-1-21', death: '2018-11-13', description: '尾身 勝次郎. Tochigi. Entrada em Santos no Brasil em 24 de agosto de 1932 no navio Buenos Aires Maru')
-Leaf.create(name: 'Ei Omi', gender: 'F', alive: 'N', birth: '1921-7-21', death: '2005-2-11', description: '二宮榮. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. Faleceu em São Paulo/SP')
+Leaf.create(name: 'Katsujiro Omi', gender: 'M', alive: 'N', birth: '1917-1-21', death: '2018-11-13',
+            description: '尾身 勝次郎. Tochigi. Entrada em Santos no Brasil em 24 de agosto de 1932 no navio ' \
+            'Buenos Aires Maru')
+Leaf.create(name: 'Ei Omi', gender: 'F', alive: 'N', birth: '1921-7-21', death: '2005-2-11',
+            description: '二宮榮. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. ' \
+            'Faleceu em São Paulo/SP')
 Leaf.create(name: 'Fernando de Brito', gender: 'M', alive: 'N')
 Leaf.create(name: 'Julieta de Luna Brito', gender: 'F', alive: 'N')
 Leaf.create(name: 'Ivino Carneiro da Silva', gender: 'M', alive: 'N')
 Leaf.create(name: 'Quitéria Basílio da Silva', gender: 'F', alive: 'N')
-Leaf.create(name: 'Kusuichi Nakao', gender: 'M', alive: 'N', birth: '1907-1-1', description: '中尾 九洲一. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Kusuichi Nakao', gender: 'M', alive: 'N', birth: '1907-1-1',
+            description: '中尾 九洲一. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido ' \
+            'somente o ano do nascimento')
 Leaf.create(name: 'Haguine Nakao', gender: 'F', alive: 'N')
 Leaf.create(name: 'Desconhecido Matsubara', gender: 'M', alive: 'N')
 Leaf.create(name: 'Kazue Matsubara', gender: 'F', alive: 'N')
@@ -701,14 +939,16 @@ Leaf.create(name: 'Marisa', gender: 'F', alive: 'S')
 Leaf.create(name: 'Gabriela', gender: 'F', alive: 'S')
 Leaf.create(name: 'Masaru Shinozuka', gender: 'M', alive: 'N')
 Leaf.create(name: 'Maria Marie Yokoyama', gender: 'F', alive: 'S')
-Leaf.create(name: 'Emilia Emiko Heira', gender: 'F', alive: 'S', birth: '1943-9-30', description: 'Presidente Prudente/SP')
+Leaf.create(name: 'Emilia Emiko Heira', gender: 'F', alive: 'S', birth: '1943-9-30',
+            description: 'Presidente Prudente/SP')
 Leaf.create(name: 'Luiza Misayo Nagatomo', gender: 'F', alive: 'S')
 Leaf.create(name: 'Rosa Kikue Hirata', gender: 'F', alive: 'S')
 Leaf.create(name: 'Masae Eishima', gender: 'F', alive: 'N')
 Leaf.create(name: 'Milton Eishima', gender: 'M', alive: 'N')
 Leaf.create(name: 'Carlos Akio Hirata', gender: 'M', alive: 'S')
 Leaf.create(name: 'Terumitsu Nagatomo', gender: 'M', alive: 'S')
-Leaf.create(name: 'Masanori Heira', gender: 'M', alive: 'S', birth: '1941-3-23', description: '平良政法. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Masanori Heira', gender: 'M', alive: 'S', birth: '1941-3-23',
+            description: '平良政法. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
 Leaf.create(name: 'Yutaka Yokoyama', gender: 'M', alive: 'S')
 Leaf.create(name: 'Tiyoko Shinozuka', gender: 'F', alive: 'S')
 Leaf.create(name: 'Yoshiaki Shinozuka', gender: 'M', alive: 'S')
@@ -726,11 +966,16 @@ Leaf.create(name: 'Erica Harumi Eishima Tanabe', gender: 'F', alive: 'S')
 Leaf.create(name: 'Emilia Emiko Eishima', gender: 'F', alive: 'S')
 Leaf.create(name: 'Mari Eishima Chikasawa', gender: 'F', alive: 'S')
 Leaf.create(name: 'Regina Yoko Eishima', gender: 'F', alive: 'S')
-Leaf.create(name: 'Rimpei Shinozuka', gender: 'M', alive: 'N', birth: '1898-1-4', description: '篠塚 林兵衛. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
-Leaf.create(name: 'Toku Shinozuka', gender: 'F', alive: 'N', birth: '1897-2-9', description: '篠塚 とく. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
-Leaf.create(name: 'Sukehei Shinozuka', gender: 'M', alive: 'S', description: '篠塚 助兵衛. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
-Leaf.create(name: 'Teinosuke Shinozuka', gender: 'M', alive: 'S', description: '篠塚 貞之介. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
-Leaf.create(name: 'Seizo Shinozuka', gender: 'M', alive: 'S', description: '篠塚 淸三. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
+Leaf.create(name: 'Rimpei Shinozuka', gender: 'M', alive: 'N', birth: '1898-1-4',
+            description: '篠塚 林兵衛. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
+Leaf.create(name: 'Toku Shinozuka', gender: 'F', alive: 'N', birth: '1897-2-9',
+            description: '篠塚 とく. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
+Leaf.create(name: 'Sukehei Shinozuka', gender: 'M', alive: 'S',
+            description: '篠塚 助兵衛. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
+Leaf.create(name: 'Teinosuke Shinozuka', gender: 'M', alive: 'S',
+            description: '篠塚 貞之介. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
+Leaf.create(name: 'Seizo Shinozuka', gender: 'M', alive: 'S',
+            description: '篠塚 淸三. Ibaraki. Entrada em Santos no Brasil em 16 de abril de 1930 no navio Hawaii Maru')
 Leaf.create(name: 'Miyoko Shinozuka', gender: 'F', alive: 'S')
 Leaf.create(name: 'Shinobu Shinozuka', gender: 'M', alive: 'S')
 Leaf.create(name: 'Keiya Shinozuka', gender: 'M', alive: 'S')
@@ -746,7 +991,8 @@ Leaf.create(name: 'Melissa Ayumi Osawa', gender: 'F', alive: 'S', birth: '2020-6
 Leaf.create(name: 'Melissa Fregonezi Sakamoto', gender: 'F', alive: 'S', birth: '2020-7-31')
 Leaf.create(name: 'Sayaka Yamada', gender: 'F', alive: 'S', birth: '2020-9-19')
 Leaf.create(name: 'Joelcio Almeida', gender: 'M', alive: 'S', birth: '1971-11-13')
-Leaf.create(name: 'João Otake Almeida', gender: 'M', alive: 'S', birth: '2021-6-12', description: 'Nasceu as 14:11 com 3,115 kg e 48,5 cm')
+Leaf.create(name: 'João Otake Almeida', gender: 'M', alive: 'S', birth: '2021-6-12',
+            description: 'Nasceu as 14:11 com 3,115 kg e 48,5 cm')
 Leaf.create(name: 'Tihiro Miyahara', gender: 'F', alive: 'S', birth: '1998-10-2')
 Leaf.create(name: 'Aki Miyahara', gender: 'F', alive: 'S', birth: '2018-8-2')
 Leaf.create(name: 'Anderson Soucha', gender: 'M', alive: 'S')
@@ -764,73 +1010,143 @@ Leaf.create(name: 'Mitie Ueno', gender: 'F', alive: 'N')
 Leaf.create(name: 'Fumie Ishimoto', gender: 'F', alive: 'N')
 Leaf.create(name: 'Otsuru Yamamoto', gender: 'F', alive: 'N')
 Leaf.create(name: 'Desconhecido Yamamoto', gender: 'M', alive: 'N')
-Leaf.create(name: 'Masahiro Isaka', gender: 'M', alive: 'N', birth: '1925-6-10', description: '井坂 正弘. Fukui. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
+Leaf.create(name: 'Masahiro Isaka', gender: 'M', alive: 'N', birth: '1925-6-10',
+            description: '井坂 正弘. Fukui. Entrada em Santos no Brasil em 01 de Setembro de 1927 no navio Manila Maru')
 Leaf.create(name: 'Foobum Saito', gender: 'M', alive: 'S')
-Leaf.create(name: 'Tatsuji Uemoto', gender: 'M', alive: 'N', birth: '1904-1-1', description: '上本 辰治. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Tamayo Uemoto', gender: 'F', alive: 'N', birth: '1905-1-1', description: '上本 多滿代. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Jishiro Uemoto', gender: 'M', alive: 'N', birth: '1877-1-1', description: '上本 治四郎. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Haruno Uemoto', gender: 'F', alive: 'N', birth: '1884-1-1', description: '上本 ハルノ. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Sumio Uemoto', gender: 'M', alive: 'N', birth: '1924-1-1', description: '上本 住雄. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Sumito Uemoto', gender: 'M', alive: 'N', birth: '1926-1-1', description: '上本 住人. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru.Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Eiichi Uemoto', gender: 'M', alive: 'N', birth: '1911-1-1', description: '上本 榮市. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Matsuyo Uemoto', gender: 'F', alive: 'N', birth: '1913-1-1', description: '上本 マツヨ. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Ryu Uemoto', gender: 'F', alive: 'N', birth: '1849-1-1', description: '上本 リウ. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Tatsuji Uemoto', gender: 'M', alive: 'N', birth: '1904-1-1',
+            description: '上本 辰治. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Tamayo Uemoto', gender: 'F', alive: 'N', birth: '1905-1-1',
+            description: '上本 多滿代. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Jishiro Uemoto', gender: 'M', alive: 'N', birth: '1877-1-1',
+            description: '上本 治四郎. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Haruno Uemoto', gender: 'F', alive: 'N', birth: '1884-1-1',
+            description: '上本 ハルノ. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Sumio Uemoto', gender: 'M', alive: 'N', birth: '1924-1-1',
+            description: '上本 住雄. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+           'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Sumito Uemoto', gender: 'M', alive: 'N', birth: '1926-1-1',
+            description: '上本 住人. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Eiichi Uemoto', gender: 'M', alive: 'N', birth: '1911-1-1',
+            description: '上本 榮市. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+           'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Matsuyo Uemoto', gender: 'F', alive: 'N', birth: '1913-1-1',
+            description: '上本 マツヨ. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Ryu Uemoto', gender: 'F', alive: 'N', birth: '1849-1-1',
+            description: '上本 リウ. Hiroshima. Entrada em Santos/SP em 16 de janeiro de 1927 no navio Santos Maru. ' \
+            'Dia e mes de nascimento desconhecido')
 Leaf.create(name: 'Saichi Ishimoto', gender: 'M', alive: 'N')
 Leaf.create(name: 'Ushi Ishimoto', gender: 'F', alive: 'N')
 Leaf.create(name: 'Naozane Heira', gender: 'M', alive: 'N')
-Leaf.create(name: 'Michi Heira', gender: 'F', alive: 'N', birth: '1918-2-24', description: '平良ミチ. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Michi Heira', gender: 'F', alive: 'N', birth: '1918-2-24',
+            description: '平良ミチ. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
 Leaf.create(name: 'Sakuhide So', gender: 'M', alive: 'N')
 Leaf.create(name: 'Tsuru So', gender: 'F', alive: 'N')
-Leaf.create(name: 'Tae Takemiya', gender: 'F', alive: 'N', birth: '1924-8-27', description: '武宮タへ. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
-Leaf.create(name: 'Korefumi Takemiya', gender: 'M', alive: 'S', birth: '1949-6-28', description: '武宮是文. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
-Leaf.create(name: 'Hideo Takemiya', gender: 'M', alive: 'N', birth: '1917-7-10', description: '武宮英夫. Kagoshima. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
-Leaf.create(name: 'Nobu Nishimura', gender: 'F', alive: 'N', birth: '1925-1-1', description: '宗ノブ. Fukuoka. Nobu So. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain. Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Tae Takemiya', gender: 'F', alive: 'N', birth: '1924-8-27',
+            description: '武宮タへ. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Korefumi Takemiya', gender: 'M', alive: 'S', birth: '1949-6-28',
+            description: '武宮是文. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Hideo Takemiya', gender: 'M', alive: 'N', birth: '1917-7-10',
+            description: '武宮英夫. Kagoshima. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Nobu Nishimura', gender: 'F', alive: 'N', birth: '1925-1-1',
+            description: '宗ノブ. Fukuoka. Nobu So. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain. ' \
+            'Dia e mes de nascimento desconhecido')
 Leaf.create(name: 'Koreaki Takemiya', gender: 'M', alive: 'N')
 Leaf.create(name: 'Tsuru Takemiya', gender: 'F', alive: 'N')
-Leaf.create(name: 'Yasuko Heira', gender: 'F', alive: 'S', birth: '1945-10-18', description: '平良康子. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
-Leaf.create(name: 'Kyoko Okawa', gender: 'F', alive: 'S', birth: '1949-6-15', description: '平良京子. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
-Leaf.create(name: 'Antonio Masarmi Omi', gender: 'M', alive: 'S', birth: '1950-11-19', description: 'São Miguel Arcanjo/SP')
-Leaf.create(name: 'Eisaku Ninomiya', gender: 'M', alive: 'N', birth: '1895-11-21', death: '1972-4-17', description: '二宮榮作. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. Faleceu em São Paulo/SP')
-Leaf.create(name: 'Saki Inoue', gender: 'F', alive: 'N', birth: '1897-2-21', death: '1980-11-7', description: '二宮サキ. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. Faleceu em São Paulo/SP')
-Leaf.create(name: 'Hideei Ninomiya', gender: 'M', alive: 'N', birth: '1924-1-1', death: '1985-5-12', description: '二宮秀榮. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. Faleceu em Diadema/SP')
-Leaf.create(name: 'Michiko Ninomiya', gender: 'F', alive: 'N', birth: '1927-11-2', description: '二宮美智子. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru')
-Leaf.create(name: 'Katsumi Ninomiya', gender: 'M', alive: 'N', birth: '1936-4-28', death: '1992-8-23', description: 'Bauru/SP. Faleceu em Sorocaba/SP')
-Leaf.create(name: 'Yoshii Inoue', gender: 'F', alive: 'N', birth: '1906-7-29', description: '井上 ヨシイ. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru')
+Leaf.create(name: 'Yasuko Heira', gender: 'F', alive: 'S', birth: '1945-10-18',
+            description: '平良康子. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Kyoko Okawa', gender: 'F', alive: 'S', birth: '1949-6-15',
+            description: '平良京子. Fukuoka. Entrada em Santos/SP em 11 de março de 1959 no navio Boissevain')
+Leaf.create(name: 'Antonio Masarmi Omi', gender: 'M', alive: 'S', birth: '1950-11-19',
+            description: 'São Miguel Arcanjo/SP')
+Leaf.create(name: 'Eisaku Ninomiya', gender: 'M', alive: 'N', birth: '1895-11-21', death: '1972-4-17',
+            description: '二宮榮作. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. ' \
+            'Faleceu em São Paulo/SP')
+Leaf.create(name: 'Saki Inoue', gender: 'F', alive: 'N', birth: '1897-2-21', death: '1980-11-7',
+            description: '二宮サキ. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. ' \
+            'Faleceu em São Paulo/SP')
+Leaf.create(name: 'Hideei Ninomiya', gender: 'M', alive: 'N', birth: '1924-1-1', death: '1985-5-12',
+            description: '二宮秀榮. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru. ' \
+            'Faleceu em Diadema/SP')
+Leaf.create(name: 'Michiko Ninomiya', gender: 'F', alive: 'N', birth: '1927-11-2',
+            description: '二宮美智子. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru')
+Leaf.create(name: 'Katsumi Ninomiya', gender: 'M', alive: 'N', birth: '1936-4-28', death: '1992-8-23',
+            description: 'Bauru/SP. Faleceu em Sorocaba/SP')
+Leaf.create(name: 'Yoshii Inoue', gender: 'F', alive: 'N', birth: '1906-7-29',
+            description: '井上 ヨシイ. Niigata. Entrada em Santos/SP em 09 de outubro de 1930 no navio La Plata Maru')
 Leaf.create(name: 'Tozo Misu', gender: 'M', alive: 'N')
 Leaf.create(name: 'Aki Misu', gender: 'F', alive: 'N')
-Leaf.create(name: 'Tsuna Misu Komatsu', gender: 'F', alive: 'N', birth: '1926-1-1', description: 'Gifu. Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Tsuna Misu Komatsu', gender: 'F', alive: 'N', birth: '1926-1-1',
+            description: 'Gifu. Dia e mes de nascimento desconhecido')
 Leaf.create(name: 'Isuke Kariatsumari', gender: 'M', alive: 'N')
 Leaf.create(name: 'Ichiki Kariatsumari', gender: 'F', alive: 'N')
-Leaf.create(name: 'Sanshiro Kariatsumari', gender: 'M', alive: 'N', birth: '1906-11-10', description: '狩集三四郎. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Sanshiro Kariatsumari', gender: 'M', alive: 'N', birth: '1906-11-10',
+            description: '狩集三四郎. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
 Leaf.create(name: 'Victorio Masashi Kariatsumari', gender: 'M', alive: 'S')
 Leaf.create(name: 'Jun Kariatsumari', gender: 'M', alive: 'S')
 Leaf.create(name: 'Chojiro Matsumoto', gender: 'M', alive: 'N')
 Leaf.create(name: 'Soe Matsumoto', gender: 'F', alive: 'N')
-Leaf.create(name: 'Waka Kariatsumari', gender: 'F', alive: 'N', birth: '1910-6-23', death: '1987-1-27', description: '狩集ワカ. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Norioki Kariatsumari', gender: 'M', alive: 'S', birth: '1935-12-24', description: '狩集教恩. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Masaru Kariatsumari', gender: 'M', alive: 'S', birth: '1941-3-30', description: '狩集優. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Minoru Kariatsumari', gender: 'M', alive: 'S', birth: '1947-3-6', description: '狩集稔. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Kayako Matsuhata', gender: 'F', alive: 'N', birth: '1949-5-21', death: '1983-2-23', description: '狩集かや子. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Yoriko Samoto', gender: 'F', alive: 'S', birth: '1943-12-31', description: '狩集ヨリ子. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Yasuo Kariatsumari', gender: 'M', alive: 'S', birth: '1933-6-11', description: '狩集安夫. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Waka Kariatsumari', gender: 'F', alive: 'N', birth: '1910-6-23', death: '1987-1-27',
+            description: '狩集ワカ. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Norioki Kariatsumari', gender: 'M', alive: 'S', birth: '1935-12-24',
+            description: '狩集教恩. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Masaru Kariatsumari', gender: 'M', alive: 'S', birth: '1941-3-30',
+            description: '狩集優. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Minoru Kariatsumari', gender: 'M', alive: 'S', birth: '1947-3-6',
+            description: '狩集稔. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Kayako Matsuhata', gender: 'F', alive: 'N', birth: '1949-5-21', death: '1983-2-23',
+            description: '狩集かや子. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Yoriko Samoto', gender: 'F', alive: 'S', birth: '1943-12-31',
+            description: '狩集ヨリ子. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Yasuo Kariatsumari', gender: 'M', alive: 'S', birth: '1933-6-11',
+            description: '狩集安夫. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
 Leaf.create(name: 'Tsuneyoshi Kadota', gender: 'M', alive: 'N')
 Leaf.create(name: 'Haru Kadota', gender: 'F', alive: 'N')
-Leaf.create(name: 'Shoko Kariatsumari', gender: 'F', alive: 'S', birth: '1933-5-19', description: '狩集昌子. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Yasuyo Kariatsumari', gender: 'F', alive: 'S', birth: '1959-11-20', description: '狩集泰代. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
-Leaf.create(name: 'Gensaku Ikeda', gender: 'M', alive: 'N', birth: '1876-1-1', description: '池田 源作. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Mon Ikeda', gender: 'F', alive: 'N', birth: '1884-1-1', description: '池田 モン. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Soichi Ikeda', gender: 'M', alive: 'N', birth: '1906-1-1', description: '池田莊一. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Tomoji Ikeda', gender: 'M', alive: 'N', birth: '1911-1-1', description: '池田友治. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Ushimatsu Ikeda', gender: 'M', alive: 'N', birth: '1913-1-1', description: '池田丑松. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Shiro Ikeda', gender: 'M', alive: 'N', birth: '1918-1-1', description: '池田四郎. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Koharu Ikeda', gender: 'F', alive: 'N', birth: '1908-1-1', description: '池田小春. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Dia e mes de nascimento desconhecido')
-Leaf.create(name: 'Toyoko Murasawa', gender: 'F', alive: 'N', birth: '1915-11-13', death: '1979-9-23', description: '池田豊子. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. Faleceu em São Paulo/SP')
-Leaf.create(name: 'Setsu Yamazaki', gender: 'F', alive: 'N', birth: '1910-8-7', description: '山崎セツ. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Bunzo Yamazaki', gender: 'M', alive: 'N', birth: '1912-11-19', description: '山崎文藏. Toyama. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Seikichi Sekiya', gender: 'M', alive: 'N', birth: '1869-10-18', description: '關矢淸吉. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Kiyoshi Sekiya', gender: 'M', alive: 'N', birth: '1908-3-24', description: '關矢淸. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Shoji Sekiya', gender: 'M', alive: 'N', birth: '1909-2-3', description: '關矢正司. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
-Leaf.create(name: 'Ei Sekiya', gender: 'F', alive: 'N', birth: '1864-6-8', description: '關矢ゑい. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Shoko Kariatsumari', gender: 'F', alive: 'S', birth: '1933-5-19',
+            description: '狩集昌子. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Yasuyo Kariatsumari', gender: 'F', alive: 'S', birth: '1959-11-20',
+            description: '狩集泰代. Miyazaki. Entrada no Rio de Janeiro em 14/08/1961 no navio Brasil Maru')
+Leaf.create(name: 'Gensaku Ikeda', gender: 'M', alive: 'N', birth: '1876-1-1',
+            description: '池田 源作. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Mon Ikeda', gender: 'F', alive: 'N', birth: '1884-1-1',
+            description: '池田 モン. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Soichi Ikeda', gender: 'M', alive: 'N', birth: '1906-1-1',
+            description: '池田莊一. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Tomoji Ikeda', gender: 'M', alive: 'N', birth: '1911-1-1',
+            description: '池田友治. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Ushimatsu Ikeda', gender: 'M', alive: 'N', birth: '1913-1-1',
+            description: '池田丑松. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Shiro Ikeda', gender: 'M', alive: 'N', birth: '1918-1-1',
+            description: '池田四郎. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Koharu Ikeda', gender: 'F', alive: 'N', birth: '1908-1-1',
+            description: '池田小春. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Dia e mes de nascimento desconhecido')
+Leaf.create(name: 'Toyoko Murasawa', gender: 'F', alive: 'N', birth: '1915-11-13', death: '1979-9-23',
+            description: '池田豊子. Osaka. Entrada em Santos/SP em 31 de julho de 1924 no navio Canada Maru. ' \
+            'Faleceu em São Paulo/SP')
+Leaf.create(name: 'Setsu Yamazaki', gender: 'F', alive: 'N', birth: '1910-8-7',
+            description: '山崎セツ. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Bunzo Yamazaki', gender: 'M', alive: 'N', birth: '1912-11-19',
+            description: '山崎文藏. Toyama. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Seikichi Sekiya', gender: 'M', alive: 'N', birth: '1869-10-18',
+            description: '關矢淸吉. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Kiyoshi Sekiya', gender: 'M', alive: 'N', birth: '1908-3-24',
+            description: '關矢淸. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Shoji Sekiya', gender: 'M', alive: 'N', birth: '1909-2-3',
+            description: '關矢正司. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
+Leaf.create(name: 'Ei Sekiya', gender: 'F', alive: 'N', birth: '1864-6-8',
+            description: '關矢ゑい. Tokyo. Entrada em Santos/SP em 03 de maio de 1932 no navio Santos Maru')
 Leaf.create(name: 'Desconhecido Uemoto', gender: 'M', alive: 'N')
 Leaf.create(name: 'Desconhecido Inoue', gender: 'M', alive: 'N')
 Leaf.create(name: 'Desconhecida Inoue', gender: 'F', alive: 'N')
@@ -840,29 +1156,53 @@ Leaf.create(name: 'Desconhecida Tabuti', gender: 'F', alive: 'S')
 Leaf.create(name: 'Marcos Yutaka Tabuti', gender: 'M', alive: 'S', description: 'Aniversário 19/08')
 Leaf.create(name: 'Rogério Yukio Tabuti', gender: 'M', alive: 'S', birth: '1967-10-14')
 Leaf.create(name: 'Márcia Mie Sericaku Tabuti', gender: 'F', alive: 'S', description: 'Aniversário 02/08')
-Leaf.create(name: 'Riichi Akiyoshi', gender: 'M', alive: 'N', birth: '1882-11-2', description: '秋吉利市. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Yone Akiyoshi', gender: 'F', alive: 'N', birth: '1889-5-31', description: '秋吉ヨ子. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Shikato Akiyoshi', gender: 'M', alive: 'N', birth: '1910-3-11', description: '秋吉鹿人. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Hiromi Akiyoshi', gender: 'F', alive: 'N', birth: '1913-12-5', description: '秋吉弘見. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Midori Fujiwara', gender: 'F', alive: 'N', birth: '1919-5-25', description: '秋吉ミドリ. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Kaoru Akiyoshi', gender: 'F', alive: 'N', birth: '1921-4-3', description: '秋吉カヲル. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Mitsuka Akiyoshi', gender: 'F', alive: 'N', birth: '1922-9-17', description: '秋吉ミツカ. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Hatsumi Akiyoshi', gender: 'F', alive: 'N', birth: '1927-3-10', description: '秋吉ハツミ. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Iwao Akiyoshi', gender: 'M', alive: 'N', birth: '1928-11-18', description: '秋吉巖. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Yoshiro Akiyoshi', gender: 'M', alive: 'N', birth: '1925-3-27', death: '1992-8-3', description: '秋吉義郎. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Shigeo Akiyoshi', gender: 'M', alive: 'N', birth: '1917-3-19', description: '秋吉繁雄. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Tatsuo Ono', gender: '', alive: 'N', birth: '1921-1-11', description: '大野龍夫. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
-Leaf.create(name: 'Masuko Yoshida', gender: 'F', alive: 'N', birth: '1919-1-30', description: '大野增子. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
-Leaf.create(name: 'Hideko Takaki', gender: 'F', alive: 'N', birth: '1924-9-15', description: '大野日出子. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
-Leaf.create(name: 'Tsunahiko Shimada', gender: 'M', alive: 'N', birth: '1893-8-10', description: '嶋田綱彥. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Matsu Shimada', gender: 'F', alive: 'N', birth: '1896-6-16', description: '嶋田マツ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Kaneo Shimada', gender: 'M', alive: 'N', birth: '1918-7-21', description: '嶋田兼夫. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Fusao Shimada', gender: 'M', alive: 'N', birth: '1927-7-2', description: '嶋田房夫. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Fumi Shimada', gender: 'F', alive: 'N', birth: '1916-10-29', description: '嶋田フミ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Soe Aoki', gender: 'F', alive: 'N', birth: '1923-2-28', description: '嶋田ソエ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Tsuruko Goto', gender: 'F', alive: 'S', birth: '1931-12-20', description: '嶋田ツル子. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Kuni Shimada', gender: 'F', alive: 'N', birth: '1920-8-17', description: '木下 クニ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru. Veio do Japão adotada pela família Kinoshita (Tadao Kinoshita (木下忠雄) e Hisa Fujimoto (木下ヒサ)).')
-Leaf.create(name: 'Minoru Shimada', gender: 'M', alive: 'N', birth: '1912-2-25', description: '嶋田實. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Riichi Akiyoshi', gender: 'M', alive: 'N', birth: '1882-11-2',
+            description: '秋吉利市. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Yone Akiyoshi', gender: 'F', alive: 'N', birth: '1889-5-31',
+            description: '秋吉ヨ子. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Shikato Akiyoshi', gender: 'M', alive: 'N', birth: '1910-3-11',
+            description: '秋吉鹿人. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Hiromi Akiyoshi', gender: 'F', alive: 'N', birth: '1913-12-5',
+            description: '秋吉弘見. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Midori Fujiwara', gender: 'F', alive: 'N', birth: '1919-5-25',
+            description: '秋吉ミドリ. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Kaoru Akiyoshi', gender: 'F', alive: 'N', birth: '1921-4-3',
+            description: '秋吉カヲル. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Mitsuka Akiyoshi', gender: 'F', alive: 'N', birth: '1922-9-17',
+            description: '秋吉ミツカ. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Hatsumi Akiyoshi', gender: 'F', alive: 'N', birth: '1927-3-10',
+            description: '秋吉ハツミ. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Iwao Akiyoshi', gender: 'M', alive: 'N', birth: '1928-11-18',
+            description: '秋吉巖. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Yoshiro Akiyoshi', gender: 'M', alive: 'N', birth: '1925-3-27', death: '1992-8-3',
+            description: '秋吉義郎. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Shigeo Akiyoshi', gender: 'M', alive: 'N', birth: '1917-3-19',
+            description: '秋吉繁雄. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
+Leaf.create(name: 'Tatsuo Ono', gender: '', alive: 'N', birth: '1921-1-11',
+            description: '大野龍夫. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
+Leaf.create(name: 'Masuko Yoshida', gender: 'F', alive: 'N', birth: '1919-1-30',
+            description: '大野增子. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
+Leaf.create(name: 'Hideko Takaki', gender: 'F', alive: 'N', birth: '1924-9-15',
+            description: '大野日出子. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
+Leaf.create(name: 'Tsunahiko Shimada', gender: 'M', alive: 'N', birth: '1893-8-10',
+            description: '嶋田綱彥. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Matsu Shimada', gender: 'F', alive: 'N', birth: '1896-6-16',
+            description: '嶋田マツ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Kaneo Shimada', gender: 'M', alive: 'N', birth: '1918-7-21',
+            description: '嶋田兼夫. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Fusao Shimada', gender: 'M', alive: 'N', birth: '1927-7-2',
+            description: '嶋田房夫. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Fumi Shimada', gender: 'F', alive: 'N', birth: '1916-10-29',
+            description: '嶋田フミ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Soe Aoki', gender: 'F', alive: 'N', birth: '1923-2-28',
+            description: '嶋田ソエ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Tsuruko Goto', gender: 'F', alive: 'S', birth: '1931-12-20',
+            description: '嶋田ツル子. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Kuni Shimada', gender: 'F', alive: 'N', birth: '1920-8-17',
+            description: '木下 クニ. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru. ' \
+            'Veio do Japão adotada pela família Kinoshita (Tadao Kinoshita (木下忠雄) e Hisa Fujimoto (木下ヒサ)).')
+Leaf.create(name: 'Minoru Shimada', gender: 'M', alive: 'N', birth: '1912-2-25',
+            description: '嶋田實. Kumamoto. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
 Leaf.create(name: 'Desconhecido Shimada', gender: 'M', alive: 'N')
 Leaf.create(name: 'Desconhecida Shimada', gender: 'F', alive: 'N')
 Leaf.create(name: 'Yutaka Goto', gender: 'M', alive: 'N')
@@ -875,78 +1215,137 @@ Leaf.create(name: 'Toby Miyahara', gender: 'P', alive: 'S')
 Leaf.create(name: 'Yuzu Miyahara', gender: 'F', alive: 'S', birth: '2021-10-22')
 Leaf.create(name: 'Olga Hiromi Yokoyama', gender: 'F', alive: 'S', birth: '1958-2-5', description: 'São Paulo/SP')
 Leaf.create(name: 'Walter Hitoshi Yokoyama', gender: 'M', alive: 'S', birth: '1952-11-13', description: 'Lucélia/SP')
-Leaf.create(name: 'Yosohachi Yokoyama', gender: 'M', alive: 'N', birth: '1881-2-5', description: '橫山八十八. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Koto Yokoyama', gender: 'F', alive: 'N', birth: '1884-11-15', description: '橫山コト. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Tsukumo Yokoyama', gender: 'M', alive: 'N', birth: '1911-3-13', death: '1982-10-9', description: '橫山九十九. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Tsune Yokoyama', gender: 'F', alive: 'N', birth: '1916-12-12', description: '橫山ツネ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Momohachi Yokoyama', gender: 'M', alive: 'N', birth: '1921-3-2', description: '橫山百八. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Mihachiro Yokoyama', gender: 'M', alive: 'N', birth: '1929-3-13', description: '橫山已八郎. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Denji Yokoyama', gender: 'M', alive: 'S', birth: '1933-10-20', description: '橫山傳次. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Momojiro Yokoyama', gender: 'M', alive: 'N', birth: '1916-2-25', description: '橫山百治郎. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Masano Yokoyama', gender: 'F', alive: 'N', birth: '1917-12-24', description: '橫山マサノ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Satono Yokoyama Muramatsu', gender: 'F', alive: 'N', birth: '1923-9-23', description: '橫山サトノ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Tsunematsu Ogaki', gender: 'M', alive: 'N', birth: '1891-2-10', description: '大柿常松. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Naka Ogaki', gender: 'F', alive: 'N', description: '大柿ナカ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Mitsuru Ogaki', gender: 'M', alive: 'N', birth: '1919-3-25', description: '大柿滿. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Minoru Ogaki', gender: 'M', alive: 'N', birth: '1922-9-15', description: '大柿實. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
-Leaf.create(name: 'Kie Ogaki Tongu', gender: 'F', alive: 'N', birth: '1928-2-15', description: '大柿喜江. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Yosohachi Yokoyama', gender: 'M', alive: 'N', birth: '1881-2-5',
+            description: '橫山八十八. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Koto Yokoyama', gender: 'F', alive: 'N', birth: '1884-11-15',
+            description: '橫山コト. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Tsukumo Yokoyama', gender: 'M', alive: 'N', birth: '1911-3-13', death: '1982-10-9',
+            description: '橫山九十九. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Tsune Yokoyama', gender: 'F', alive: 'N', birth: '1916-12-12',
+            description: '橫山ツネ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Momohachi Yokoyama', gender: 'M', alive: 'N', birth: '1921-3-2',
+            description: '橫山百八. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Mihachiro Yokoyama', gender: 'M', alive: 'N', birth: '1929-3-13',
+            description: '橫山已八郎. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Denji Yokoyama', gender: 'M', alive: 'S', birth: '1933-10-20',
+            description: '橫山傳次. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Momojiro Yokoyama', gender: 'M', alive: 'N', birth: '1916-2-25',
+            description: '橫山百治郎. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Masano Yokoyama', gender: 'F', alive: 'N', birth: '1917-12-24',
+            description: '橫山マサノ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Satono Yokoyama Muramatsu', gender: 'F', alive: 'N', birth: '1923-9-23',
+            description: '橫山サトノ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Tsunematsu Ogaki', gender: 'M', alive: 'N', birth: '1891-2-10',
+            description: '大柿常松. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Naka Ogaki', gender: 'F', alive: 'N',
+            description: '大柿ナカ. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Mitsuru Ogaki', gender: 'M', alive: 'N', birth: '1919-3-25',
+            description: '大柿滿. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Minoru Ogaki', gender: 'M', alive: 'N', birth: '1922-9-15',
+            description: '大柿實. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
+Leaf.create(name: 'Kie Ogaki Tongu', gender: 'F', alive: 'N', birth: '1928-2-15',
+            description: '大柿喜江. Fukushima. Entrada em Santos/SP em 31/08/1934 no navio Montevideo Maru')
 Leaf.create(name: 'Yuki Ogaki', gender: 'F', alive: 'N', birth: '1926-5-1')
-Leaf.create(name: 'Minosuke Morota', gender: 'M', alive: 'N', birth: '1969-8-9', description: '師田美之助. Hokkaido. Entrada em Santos/SP em 20/05/1919 no navio Sanuki Maru')
-Leaf.create(name: 'Chiyo Morota', gender: 'F', alive: 'N', description: '師田ちよ. Hokkaido. Entrada em Santos/SP em 20/05/1919 no navio Sanuki Maru')
+Leaf.create(name: 'Minosuke Morota', gender: 'M', alive: 'N', birth: '1969-8-9',
+            description: '師田美之助. Hokkaido. Entrada em Santos/SP em 20/05/1919 no navio Sanuki Maru')
+Leaf.create(name: 'Chiyo Morota', gender: 'F', alive: 'N',
+            description: '師田ちよ. Hokkaido. Entrada em Santos/SP em 20/05/1919 no navio Sanuki Maru')
 Leaf.create(name: 'Kiyoshi Morota', gender: 'M', alive: 'N', birth: '1920-9-12', description: 'Iguape/SP')
-Leaf.create(name: 'Hidekichi Suwa', gender: 'M', alive: 'N', birth: '1890-8-21', description: '諏訪秀吉. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Hiro Suwa', gender: 'F', alive: 'N', birth: '1898-5-11', description: '諏訪ヒロ. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Jitaro Suwa', gender: 'M', alive: 'N', birth: '1855-1-1', description: 'Aichi. Dia e mes de nascimento desconhecidos')
-Leaf.create(name: 'Chika Suwa', gender: 'F', alive: 'N', birth: '1860-1-1', description: 'Aichi. Dia e mes de nascimento desconhecidos')
+Leaf.create(name: 'Hidekichi Suwa', gender: 'M', alive: 'N', birth: '1890-8-21',
+            description: '諏訪秀吉. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Hiro Suwa', gender: 'F', alive: 'N', birth: '1898-5-11',
+            description: '諏訪ヒロ. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Jitaro Suwa', gender: 'M', alive: 'N', birth: '1855-1-1',
+            description: 'Aichi. Dia e mes de nascimento desconhecidos')
+Leaf.create(name: 'Chika Suwa', gender: 'F', alive: 'N', birth: '1860-1-1',
+            description: 'Aichi. Dia e mes de nascimento desconhecidos')
 Leaf.create(name: 'Yodaemon Matsuda', gender: 'M', alive: 'N')
 Leaf.create(name: 'Sato Matsuda', gender: 'F', alive: 'N')
 Leaf.create(name: 'Senmatsu Honda', gender: 'M', alive: 'N')
-Leaf.create(name: 'Bunji Honda', gender: 'M', alive: 'N', birth: '1925-9-20', description: '本多文二. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Tsuguo Suwa', gender: 'M', alive: 'N', birth: '1920-4-13', description: '諏訪次夫. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Noboru Suwa', gender: 'M', alive: 'N', birth: '1928-8-22', description: '諏訪昇. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Hisako Suwa', gender: 'F', alive: 'S', birth: '1936-8-12', description: '諏訪久子. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Fumihiko Honda', gender: 'M', alive: 'N', birth: '1919-7-23', description: '本多文彥. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Eiko Suwa Morota', gender: 'F', alive: 'N', birth: '1927-12-20', description: '本多榮子. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
-Leaf.create(name: 'Hana Suzuki Honda', gender: 'F', alive: 'N', birth: '1926-11-30', description: '鈴木ハナ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Bunji Honda', gender: 'M', alive: 'N', birth: '1925-9-20',
+            description: '本多文二. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Tsuguo Suwa', gender: 'M', alive: 'N', birth: '1920-4-13',
+            description: '諏訪次夫. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Noboru Suwa', gender: 'M', alive: 'N', birth: '1928-8-22',
+            description: '諏訪昇. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Hisako Suwa', gender: 'F', alive: 'S', birth: '1936-8-12',
+            description: '諏訪久子. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Fumihiko Honda', gender: 'M', alive: 'N', birth: '1919-7-23',
+            description: '本多文彥. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Eiko Suwa Morota', gender: 'F', alive: 'N', birth: '1927-12-20',
+            description: '本多榮子. Osaka. Entrada em Santos/SP em 09/08/1937 no navio La Plata Maru')
+Leaf.create(name: 'Hana Suzuki Honda', gender: 'F', alive: 'N', birth: '1926-11-30',
+            description: '鈴木ハナ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
 Leaf.create(name: 'Paulo Miquio Honda', gender: 'M', alive: 'S', birth: '1948-2-21', description: 'Guarulhos/SP')
-Leaf.create(name: 'Sogoro Suzuki', gender: 'M', alive: 'N', birth: '1901-9-20', description: '鈴木惣五郎. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Tamano Suzuki', gender: 'F', alive: 'N', birth: '1902-8-8', description: '鈴木タマノ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Sogoro Suzuki', gender: 'M', alive: 'N', birth: '1901-9-20',
+            description: '鈴木惣五郎. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Tamano Suzuki', gender: 'F', alive: 'N', birth: '1902-8-8',
+            description: '鈴木タマノ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
 Leaf.create(name: 'Nisoji Takahashi', gender: 'M', alive: 'N')
 Leaf.create(name: 'Saki Takahashi', gender: 'F', alive: 'N')
-Leaf.create(name: 'Chukichi Suzuki', gender: 'M', alive: 'S', birth: '1933-10-8', description: '鈴木忠吉. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru Santos/SP 01/08/1934')
-Leaf.create(name: 'Sokichi Suzuki', gender: 'M', alive: 'N', birth: '1931-1-14', description: '鈴木惣吉. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Hama Suzuki Taira', gender: 'F', alive: 'N', birth: '1924-4-22', description: '鈴木ハマ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Kuni Suzuki', gender: 'F', alive: 'N', birth: '1921-10-18', description: '鈴木クニ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Chukichi Suzuki', gender: 'M', alive: 'S', birth: '1933-10-8',
+            description: '鈴木忠吉. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru ' \
+            'Santos/SP 01/08/1934')
+Leaf.create(name: 'Sokichi Suzuki', gender: 'M', alive: 'N', birth: '1931-1-14',
+            description: '鈴木惣吉. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Hama Suzuki Taira', gender: 'F', alive: 'N', birth: '1924-4-22',
+            description: '鈴木ハマ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Kuni Suzuki', gender: 'F', alive: 'N', birth: '1921-10-18',
+            description: '鈴木クニ. Yamagata. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
 Leaf.create(name: 'Jyroemon Morota', gender: 'M', alive: 'N')
 Leaf.create(name: 'Yae Morota', gender: 'F', alive: 'N')
-Leaf.create(name: 'Toyome Satake', gender: 'F', alive: 'N', birth: '1913-12-27', description: 'Entrada em Santos/SP em 18/08/1964 no navio')
-Leaf.create(name: 'Antonio Yokoyama', gender: 'M', alive: 'N', birth: '1974-11-10', description: 'Faleceu em Londrina/PR')
-Leaf.create(name: 'Kenda Hirata', gender: 'M', alive: 'N', birth: '1916-3-15', description: '平田健太. Fukuoka. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
-Leaf.create(name: 'Hatsuko Hirata', gender: 'F', alive: 'N', birth: '1924-11-21', description: '稲富ハツ子. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
+Leaf.create(name: 'Toyome Satake', gender: 'F', alive: 'N', birth: '1913-12-27',
+            description: 'Entrada em Santos/SP em 18/08/1964 no navio')
+Leaf.create(name: 'Antonio Yokoyama', gender: 'M', alive: 'N', birth: '1974-11-10',
+            description: 'Faleceu em Londrina/PR')
+Leaf.create(name: 'Kenda Hirata', gender: 'M', alive: 'N', birth: '1916-3-15',
+            description: '平田健太. Fukuoka. Entrada em Santos/SP em 01/08/1934 no navio Rio de Janeiro Maru')
+Leaf.create(name: 'Hatsuko Hirata', gender: 'F', alive: 'N', birth: '1924-11-21',
+            description: '稲富ハツ子. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
 Leaf.create(name: 'Luiza Emiko Hirata', gender: 'F', alive: 'S', birth: '1947-7-23')
-Leaf.create(name: 'Kentaro Hirata', gender: 'M', alive: 'N', birth: '1880-5-15', description: '平田兼太郎. Fukuoka. Entrada em Santos/SP em 29/12/1935 no navio La Plata Maru')
-Leaf.create(name: 'Kin Hirata', gender: 'F', alive: 'N', birth: '1886-12-5', description: '平田キン. Fukuoka. Entrada em Santos/SP em 29/12/1935 no navio La Plata Maru')
-Leaf.create(name: 'Eitaro Inatomi', gender: 'M', alive: 'N', birth: '1905-3-5', description: '稻富榮太郎. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
-Leaf.create(name: 'Muneyo Inatomi', gender: 'F', alive: 'N', birth: '1892-12-5', death: '1983-12-8', description: '稻富ム子ヨ. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru. Faleceu em Curitiba/PR')
-Leaf.create(name: 'Kiri Inatomi', gender: 'F', alive: 'N', birth: '1865-6-10', description: '稻富キリ. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
-Leaf.create(name: 'Kiyota Inatomi', gender: 'M', alive: 'N', birth: '1911-4-27', description: '稻富淸太. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
-Leaf.create(name: 'Rikita Inatomi', gender: 'M', alive: 'N', birth: '1915-9-17', death: '1987-1-9', description: '稻富力太. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
-Leaf.create(name: 'Masato Inatomi', gender: 'M', alive: 'N', birth: '1918-7-23', description: '稻富正人. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
+Leaf.create(name: 'Kentaro Hirata', gender: 'M', alive: 'N', birth: '1880-5-15',
+            description: '平田兼太郎. Fukuoka. Entrada em Santos/SP em 29/12/1935 no navio La Plata Maru')
+Leaf.create(name: 'Kin Hirata', gender: 'F', alive: 'N', birth: '1886-12-5',
+            description: '平田キン. Fukuoka. Entrada em Santos/SP em 29/12/1935 no navio La Plata Maru')
+Leaf.create(name: 'Eitaro Inatomi', gender: 'M', alive: 'N', birth: '1905-3-5',
+            description: '稻富榮太郎. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
+Leaf.create(name: 'Muneyo Inatomi', gender: 'F', alive: 'N', birth: '1892-12-5', death: '1983-12-8',
+            description: '稻富ム子ヨ. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru. ' \
+            'Faleceu em Curitiba/PR')
+Leaf.create(name: 'Kiri Inatomi', gender: 'F', alive: 'N', birth: '1865-6-10',
+            description: '稻富キリ. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
+Leaf.create(name: 'Kiyota Inatomi', gender: 'M', alive: 'N', birth: '1911-4-27',
+            description: '稻富淸太. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
+Leaf.create(name: 'Rikita Inatomi', gender: 'M', alive: 'N', birth: '1915-9-17', death: '1987-1-9',
+            description: '稻富力太. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
+Leaf.create(name: 'Masato Inatomi', gender: 'M', alive: 'N', birth: '1918-7-23',
+            description: '稻富正人. Fukuoka. Entrada em Santos/SP em 29/11/1933 no navio La Plata Maru')
 Leaf.create(name: 'Masako Inatomi', gender: 'M', alive: 'N')
-Leaf.create(name: 'Fujiko Inatomi', gender: 'F', alive: 'N', birth: '1920-4-14', death: '2015-2-15', description: 'Iguape/SP. Faleceu em Presidente Venceslau/SP')
-Leaf.create(name: 'José Yokio Inatomi', gender: 'M', alive: 'N', birth: '1943-11-25', description: 'Presidente Venceslau/SP')
+Leaf.create(name: 'Fujiko Inatomi', gender: 'F', alive: 'N', birth: '1920-4-14', death: '2015-2-15',
+            description: 'Iguape/SP. Faleceu em Presidente Venceslau/SP')
+Leaf.create(name: 'José Yokio Inatomi', gender: 'M', alive: 'N', birth: '1943-11-25',
+            description: 'Presidente Venceslau/SP')
 Leaf.create(name: 'Tsuyoshi Inatomi', gender: 'M', alive: 'N', birth: '1921-2-28', description: 'Fukuoka')
-Leaf.create(name: 'Takeo Inatomi', gender: 'M', alive: 'S', birth: '1935-8-26', description: 'Santa Cruz do Rio Pardo/SP')
-Leaf.create(name: 'Masataro Naito', gender: 'M', alive: 'N', birth: '1865-1-1', description: 'Dia e mes do nascimento desconhecido')
-Leaf.create(name: 'Shitsu Naito', gender: 'F', alive: 'N', birth: '1870-1-1', description: 'Dia e mes do nascimento desconhecido')
-Leaf.create(name: 'Luiz Shigueo Inatomi', gender: 'M', alive: 'N', birth: '1952-11-11', death: '1993-6-9', description: 'Presidente Venceslau. Faleceu em São Paulo/SP')
+Leaf.create(name: 'Takeo Inatomi', gender: 'M', alive: 'S', birth: '1935-8-26',
+            description: 'Santa Cruz do Rio Pardo/SP')
+Leaf.create(name: 'Masataro Naito', gender: 'M', alive: 'N', birth: '1865-1-1',
+            description: 'Dia e mes do nascimento desconhecido')
+Leaf.create(name: 'Shitsu Naito', gender: 'F', alive: 'N', birth: '1870-1-1',
+            description: 'Dia e mes do nascimento desconhecido')
+Leaf.create(name: 'Luiz Shigueo Inatomi', gender: 'M', alive: 'N', birth: '1952-11-11', death: '1993-6-9',
+            description: 'Presidente Venceslau. Faleceu em São Paulo/SP')
 Leaf.create(name: 'Ana Lucia Chaves', gender: 'F', alive: 'S')
 Leaf.create(name: 'Felipe', gender: 'M', alive: 'S')
-Leaf.create(name: 'Katsutaro Inatomi', gender: 'M', alive: 'N', birth: '1860-1-1', description: 'Dia e mes do nascimento desconhecido')
-Leaf.create(name: 'Teru Inatomi', gender: 'F', alive: 'N', birth: '1915-10-25', death: '1958-2-3', description: '馬郡テル. Saga. Entrada em Santos/SP em 07/07/1928 no navio Santos Maru. Faleceu em Curitiba/PR')
-Leaf.create(name: 'Tetsuji Magori', gender: 'M', alive: 'N', birth: '1917-7-31', description: '馬郡鐵次. Saga. Entrada em Santos/SP em 07/07/1928 no navio Santos Maru')
-Leaf.create(name: 'Katsuzo Magori', gender: 'M', alive: 'N', birth: '1891-1-1', description: 'Dia e mes do nascimento desconhecido')
-Leaf.create(name: 'Tsui Magori', gender: 'F', alive: 'N', birth: '1895-1-1', description: 'Dia e mes do nascimento desconhecido')
+Leaf.create(name: 'Katsutaro Inatomi', gender: 'M', alive: 'N', birth: '1860-1-1',
+            description: 'Dia e mes do nascimento desconhecido')
+Leaf.create(name: 'Teru Inatomi', gender: 'F', alive: 'N', birth: '1915-10-25', death: '1958-2-3',
+            description: '馬郡テル. Saga. Entrada em Santos/SP em 07/07/1928 no navio Santos Maru. Faleceu em Curitiba/PR')
+Leaf.create(name: 'Tetsuji Magori', gender: 'M', alive: 'N', birth: '1917-7-31',
+            description: '馬郡鐵次. Saga. Entrada em Santos/SP em 07/07/1928 no navio Santos Maru')
+Leaf.create(name: 'Katsuzo Magori', gender: 'M', alive: 'N', birth: '1891-1-1',
+            description: 'Dia e mes do nascimento desconhecido')
+Leaf.create(name: 'Tsui Magori', gender: 'F', alive: 'N', birth: '1895-1-1',
+            description: 'Dia e mes do nascimento desconhecido')
 Leaf.create(name: 'Bruno Kamogawa', gender: 'M', alive: 'S')
 Leaf.create(name: 'Guilherme Seiji Kamogawa', gender: 'M', alive: 'S')
 Leaf.create(name: 'Eduardo Kamogawa', gender: 'M', alive: 'S')
@@ -982,27 +1381,52 @@ Leaf.create(name: 'Katia Maeda Kanoski', gender: 'F', alive: 'S', description: '
 Leaf.create(name: 'Amanda', gender: 'F', alive: 'S')
 Leaf.create(name: 'Alberto Nakamura', gender: 'M', alive: 'S')
 Leaf.create(name: 'Shigeo Yamazaki', gender: 'M', alive: 'S')
-Leaf.create(name: 'Ekizo Nakao', gender: 'M', alive: 'N', birth: '1879-1-1', description: '中尾 易藏. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
-Leaf.create(name: 'Tome Nakao', gender: 'F', alive: 'N', birth: '1886-1-1', description: '中尾 トメ. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
-Leaf.create(name: 'Yasuo Nakao', gender: 'M', alive: 'N', birth: '1904-1-1', description: '中尾 安雄. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Ekizo Nakao', gender: 'M', alive: 'N', birth: '1879-1-1',
+            description: '中尾 易藏. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Tome Nakao', gender: 'F', alive: 'N', birth: '1886-1-1',
+            description: '中尾 トメ. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Yasuo Nakao', gender: 'M', alive: 'N', birth: '1904-1-1',
+            description: '中尾 安雄. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
 Leaf.create(name: 'Takataro Matsumoto', gender: 'M', alive: 'N')
-Leaf.create(name: 'Yutaka Nakao', gender: 'M', alive: 'N', birth: '1912-1-1', description: '中尾 豊. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
-Leaf.create(name: 'Akira Nakao', gender: 'M', alive: 'N', birth: '1914-1-1', description: '中尾 明. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
-Leaf.create(name: 'Harumi Nakao', gender: 'M', alive: 'N', birth: '1920-1-1', description: '中尾 春美. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
-Leaf.create(name: 'Shizue Nakao', gender: 'F', alive: 'N', birth: '1923-1-1', description: '中尾 シヅエ. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. Conhecido somente o ano do nascimento')
-Leaf.create(name: 'Seiichi Taguchi', gender: 'M', alive: 'N', birth: '1885-2-26', description: '田口 静一. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
-Leaf.create(name: 'Hatsu Taguchi', gender: 'F', alive: 'N', birth: '1900-1-18', description: '田口 はつ. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
-Leaf.create(name: 'Masayoshi Taguchi', gender: 'M', alive: 'N', birth: '1921-6-22', description: '田口 正純. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
-Leaf.create(name: 'Tadashi Taguchi', gender: 'M', alive: 'N', birth: '1923-10-31', description: '田口 正. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
-Leaf.create(name: 'Mamoru Taguchi', gender: 'M', alive: 'N', birth: '1929-1-21', description: '田口 守. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
-Leaf.create(name: 'Tamotsu Taguchi', gender: 'M', alive: 'N', birth: '1930-5-4', description: '田口 保. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
+Leaf.create(name: 'Yutaka Nakao', gender: 'M', alive: 'N', birth: '1912-1-1',
+            description: '中尾 豊. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Akira Nakao', gender: 'M', alive: 'N', birth: '1914-1-1',
+            description: '中尾 明. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Harumi Nakao', gender: 'M', alive: 'N', birth: '1920-1-1',
+            description: '中尾 春美. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Shizue Nakao', gender: 'F', alive: 'N', birth: '1923-1-1',
+            description: '中尾 シヅエ. Saga. Entrada em Santos/SP em 31/08/1925 no navio Kawachi Maru. ' \
+            'Conhecido somente o ano do nascimento')
+Leaf.create(name: 'Seiichi Taguchi', gender: 'M', alive: 'N', birth: '1885-2-26',
+            description: '田口 静一. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
+Leaf.create(name: 'Hatsu Taguchi', gender: 'F', alive: 'N', birth: '1900-1-18',
+            description: '田口 はつ. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
+Leaf.create(name: 'Masayoshi Taguchi', gender: 'M', alive: 'N', birth: '1921-6-22',
+            description: '田口 正純. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
+Leaf.create(name: 'Tadashi Taguchi', gender: 'M', alive: 'N', birth: '1923-10-31',
+            description: '田口 正. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
+Leaf.create(name: 'Mamoru Taguchi', gender: 'M', alive: 'N', birth: '1929-1-21',
+            description: '田口 守. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
+Leaf.create(name: 'Tamotsu Taguchi', gender: 'M', alive: 'N', birth: '1930-5-4',
+            description: '田口 保. Tochigi. Chegada em Santos/SP em 24/08/1932 no navio Buenos Aires Maru')
 Leaf.create(name: 'Mirian', gender: 'F', alive: 'S')
 Leaf.create(name: 'Wilson', gender: 'M', alive: 'S')
-Leaf.create(name: 'Matsuo Tanaka', gender: 'M', alive: 'N', birth: '1916-7-18', description: '田中 松男. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Kunio Tanaka', gender: 'M', alive: 'N', birth: '1919-1-20', description: '田中 邦夫. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Teruo Tanaka', gender: 'M', alive: 'N', birth: '1925-8-21', description: '田中 輝夫. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Kasue Tanaka', gender: 'F', alive: 'N', birth: '1912-12-8', description: '田中 カスヱ. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
-Leaf.create(name: 'Fusa Tanaka', gender: 'F', alive: 'N', birth: '1928-5-12', description: '田中 フサ. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Matsuo Tanaka', gender: 'M', alive: 'N', birth: '1916-7-18',
+            description: '田中 松男. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Kunio Tanaka', gender: 'M', alive: 'N', birth: '1919-1-20',
+            description: '田中 邦夫. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Teruo Tanaka', gender: 'M', alive: 'N', birth: '1925-8-21',
+            description: '田中 輝夫. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Kasue Tanaka', gender: 'F', alive: 'N', birth: '1912-12-8',
+            description: '田中 カスヱ. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
+Leaf.create(name: 'Fusa Tanaka', gender: 'F', alive: 'N', birth: '1928-5-12',
+            description: '田中 フサ. Hokkaido. Entrada em Santos/SP em 03/02/1933 no navio Buenos Aires Maru')
 Leaf.create(name: 'Sime Matsumoto', gender: 'F', alive: 'N')
 Leaf.create(name: 'Isabelly', gender: 'F', alive: 'S', birth: '2015-1-12')
 Leaf.create(name: 'José Ilson', gender: 'M', alive: 'N')
@@ -1023,11 +1447,16 @@ Leaf.create(name: 'Rafaela', gender: 'F', alive: 'S')
 Leaf.create(name: 'Desconhecido Mayumi', gender: 'M', alive: 'S')
 Leaf.create(name: 'Cristiane Mayumi', gender: 'F', alive: 'S')
 Leaf.create(name: 'Breno', gender: 'M', alive: 'S')
-Leaf.create(name: 'Chikashi Kondo', gender: 'M', alive: 'N', birth: '1897-5-25', description: '近藤 近. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
-Leaf.create(name: 'Hatsumi Kondo', gender: 'F', alive: 'N', birth: '1901-10-5', description: '近藤 ハツミ. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru. Família Ogata')
-Leaf.create(name: 'Sumie Kondo', gender: 'F', alive: 'N', birth: '1928-8-19', description: '近藤 すみゑ. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
-Leaf.create(name: 'Chikae Kondo', gender: 'F', alive: 'N', birth: '1931-2-18', description: '近藤 近江. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
-Leaf.create(name: 'Akira Kondo', gender: 'M', alive: 'N', birth: '1922-1-10', description: '近藤 晟. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru. Adotado')
+Leaf.create(name: 'Chikashi Kondo', gender: 'M', alive: 'N', birth: '1897-5-25',
+            description: '近藤 近. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
+Leaf.create(name: 'Hatsumi Kondo', gender: 'F', alive: 'N', birth: '1901-10-5',
+            description: '近藤 ハツミ. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru. Família Ogata')
+Leaf.create(name: 'Sumie Kondo', gender: 'F', alive: 'N', birth: '1928-8-19',
+            description: '近藤 すみゑ. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
+Leaf.create(name: 'Chikae Kondo', gender: 'F', alive: 'N', birth: '1931-2-18',
+            description: '近藤 近江. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru')
+Leaf.create(name: 'Akira Kondo', gender: 'M', alive: 'N', birth: '1922-1-10',
+            description: '近藤 晟. Fukuoka. Chegada em Santos/SP 01/10/1934 no navio La Plata Maru. Adotado')
 Leaf.create(name: 'Mitinoiti Kondo', gender: 'M', alive: 'N')
 Leaf.create(name: 'Torano Kondo', gender: 'F', alive: 'N')
 Leaf.create(name: 'Tomekiti Ogata', gender: 'M', alive: 'N')

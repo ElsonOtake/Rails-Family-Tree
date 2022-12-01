@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Pairs are couples or parents of children
 class CreatePairs < ActiveRecord::Migration[7.0]
   def change
     create_table :pairs do |t|
