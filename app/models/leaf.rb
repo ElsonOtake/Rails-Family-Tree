@@ -1,6 +1,6 @@
 class Leaf < ApplicationRecord
   include ActiveModel::Serializers::JSON
-  attr_accessor :parents
+  attr_accessor :parents, :children
   has_many :leaf1_pairs, class_name: 'Pair', foreign_key: 'leaf1_id'
   has_many :leaf2_pairs, class_name: 'Pair', foreign_key: 'leaf2_id'
   validates :name, presence: true

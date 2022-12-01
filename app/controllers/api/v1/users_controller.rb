@@ -28,10 +28,11 @@ class Api::V1::UsersController < ApplicationController
       branches.leaf_id = leafs.id join pairs on pairs.id = branches.pair_id where pairs.id =
       (select pair_id from branches where leaf_id = #{params[:id]}) and leafs.id <> #{params[:id]}
       order by birth")
-    @user.parents = parents_1 + parents_2
+    @user.parents = parents
+    @user.children = children
     puts "@user #{@user.parents}"
     # puts "@user.serializable_hash #{@user.serializable_hash}"
-    puts "@user.serializable_hash #{@user.serializable_hash(include: :parents)}"
+    puts "@user.serializable_hash #{@user.serializable_hash(include: [:parents, :children])}"
     # puts "parents #{parents}"
     puts "parents #{parents}"
     puts "parents_1 #{parents_1}"
