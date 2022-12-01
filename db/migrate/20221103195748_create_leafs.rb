@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Leaf means individuals in the family tree
 class CreateLeafs < ActiveRecord::Migration[7.0]
   def change
     create_table :leafs do |t|

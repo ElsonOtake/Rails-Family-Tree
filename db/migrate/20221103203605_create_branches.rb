@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Branches link leafs (individuals) to pairs (parents)
 class CreateBranches < ActiveRecord::Migration[7.0]
   def change
     create_table :branches do |t|
