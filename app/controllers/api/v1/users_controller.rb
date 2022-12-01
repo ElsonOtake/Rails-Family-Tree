@@ -14,6 +14,10 @@ class Api::V1::UsersController < ApplicationController
     parents = Leaf.find_by_sql("select id, name, gender from leafs where id in
       (select leafs.id from leafs join pairs on leafs.id = leaf1_id or leafs.id = leaf2_id join
       branches on branches.pair_id = pairs.id where branches.leaf_id = #{params[:id]})")
+    parents_1 = Leaf.where(id: Pair.select(:leaf1_id).where(id:
+      Branch.select(:pair_id).where(leaf_id: "#{params[:id]}")))
+    parents_2 = Leaf.where(id: Pair.select(:leaf2_id).where(id:
+      Branch.select(:pair_id).where(leaf_id: "#{params[:id]}")))
     children = Leaf.find_by_sql("select id, name, gender from leafs where id in (select leaf_id
       from branches join pairs on branches.pair_id = pairs.id where leaf1_id = #{params[:id]} or
       leaf2_id = #{params[:id]}) order by birth")
@@ -24,8 +28,14 @@ class Api::V1::UsersController < ApplicationController
       branches.leaf_id = leafs.id join pairs on pairs.id = branches.pair_id where pairs.id =
       (select pair_id from branches where leaf_id = #{params[:id]}) and leafs.id <> #{params[:id]}
       order by birth")
-    puts "@user #{@user}"
+    @user.parents = parents_1 + parents_2
+    puts "@user #{@user.parents}"
+    # puts "@user.serializable_hash #{@user.serializable_hash}"
+    puts "@user.serializable_hash #{@user.serializable_hash(include: :parents)}"
+    # puts "parents #{parents}"
     puts "parents #{parents}"
+    puts "parents_1 #{parents_1}"
+    puts "parents_2 #{parents_2}"
     puts "children #{children}"
     puts "partner #{partner}"
     puts "siblings #{siblings}"
