@@ -1,11 +1,23 @@
 siblings
-Leaf.find_by_sql("select name, gender from leafs join branches on branches.leaf_id = leafs.id join pairs on pairs.id = branches.pair_id where pairs.id = (select pair_id from branches where leaf_id = (select id from leafs where name = 'Elson Akio Otake')) and name <> 'Elson Akio Otake' order by birth")
+Leaf.find_by_sql("select id, name, gender from leafs join branches on branches.leaf_id = leafs.id join pairs on pairs.id = branches.pair_id where pairs.id = (select pair_id from branches where leaf_id = (select id from leafs where name = 'Elson Akio Otake')) and name <> 'Elson Akio Otake' order by birth")
+Leaf.where(id: Branch.select(:leaf_id).where(pair_id: Branch.select(:pair_id).where(leaf_id: takashi)))
 
 parents
-Leaf.find_by_sql("select name, gender from leafs where id in (select leafs.id from leafs join pairs on leafs.id = leaf1_id or leafs.id = leaf2_id join branches on branches.pair_id = pairs.id where branches.leaf_id = (select id from leafs where name = 'Elson Akio Otake'))")
+Leaf.find_by_sql("select id, name, gender from leafs where id in (select leafs.id from leafs join pairs on leafs.id = leaf1_id or leafs.id = leaf2_id join branches on branches.pair_id = pairs.id where branches.leaf_id = (select id from leafs where name = 'Elson Akio Otake'))")
+parents = Pair.where(id: Branch.select(:pair_id).where(leaf_id: takashi))
+Leaf.where(id: parents.select(:leaf1_id))
+Leaf.where(id: parents.select(:leaf2_id))
 
 partner
-Leaf.find_by_sql("select name, gender from leafs where id in (select leaf1_id from pairs where leaf2_id = (select id from leafs where name = 'Elson Akio Otake') union select leaf2_id from pairs where leaf1_id = (select id from leafs where name = 'Elson Akio Otake'))")
+Leaf.find_by_sql("select id, name, gender from leafs where id in (select leaf1_id from pairs where leaf2_id = (select id from leafs where name = 'Elson Akio Otake') union select leaf2_id from pairs where leaf1_id = (select id from leafs where name = 'Elson Akio Otake'))")
+Leaf.where(id: Pair.select(:leaf1_id).where(id: Branch.where(leaf_id: takashi)))
+or
+Leaf.where(id: Pair.select(:leaf2_id).where(id: Branch.where(leaf_id: takashi)))
+
 
 children
 Leaf.find_by_sql("select id, name, gender from leafs where id in (select leaf_id from branches join pairs on branches.pair_id = pairs.id where leaf1_id = (select id from leafs where name = 'Akira Otake') or leaf2_id = (select id from leafs where name = 'Akira Otake')) order by birth")
+Pair.where(leaf1_id: takashi)
+or
+Pair.where(leaf2_id: takashi)
+Leaf.where(id: Branch.select(:leaf_id).where(pair_id: Pair.where(leaf1_id: takashi)))
