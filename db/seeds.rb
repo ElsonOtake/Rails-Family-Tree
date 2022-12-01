@@ -1178,7 +1178,7 @@ Leaf.create(name: 'Yoshiro Akiyoshi', gender: 'M', alive: 'N', birth: '1925-3-27
             description: '秋吉義郎. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
 Leaf.create(name: 'Shigeo Akiyoshi', gender: 'M', alive: 'N', birth: '1917-3-19',
             description: '秋吉繁雄. Fukuoka. Entrada em Santos/SP em 19/10/1929 no navio Kawachi Maru')
-Leaf.create(name: 'Tatsuo Ono', gender: '', alive: 'N', birth: '1921-1-11',
+Leaf.create(name: 'Tatsuo Ono', gender: 'M', alive: 'N', birth: '1921-1-11',
             description: '大野龍夫. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
 Leaf.create(name: 'Masuko Yoshida', gender: 'F', alive: 'N', birth: '1919-1-30',
             description: '大野增子. Shimane. Entrada em Santos/SP em 27/05/1933 no navio Africa Maru')
