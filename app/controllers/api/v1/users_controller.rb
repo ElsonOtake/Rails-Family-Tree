@@ -2,9 +2,7 @@ module Api
   module V1
     # User controller handles interaction with table leafs
     class UsersController < ApplicationController
-      before_action :find_user, except: %i[create index]
-
-      # ALLOWED_DATA = %(name gender alive birth death description).freeze
+      before_action :find_user, except: %i[index]
 
       # GET /users
       def index
@@ -19,41 +17,6 @@ module Api
         @user.partner = find_partner
         @user.siblings = find_siblings
         render json: @user.serializable_hash(include: %i[parents children partner siblings]), status: :ok
-      end
-
-      # POST /users
-      def create
-        # data = json_payload.select { |allow| ALLOWED_DATA.include?(allow) }
-        # if data.empty?
-        #   return render json: { error: 'Empty body. Could not create user.' }, status: :unprocessable_entity
-        # end
-
-        # user = Leaf.new(data)
-        # if user.save
-        #   render json: user, status: :ok
-        # else
-        #   render json: { error: 'Could not create user.' }, status: :unprocessable_entity
-        # end
-      end
-
-      # PUT /users/:id
-      def update
-        # data = json_payload.select { |allow| ALLOWED_DATA.include?(allow) }
-        # if data.empty?
-        #   return render json: { error: 'Empty body. Could not update user.' }, status: :unprocessable_entity
-        # end
-
-        # if @user.update(data)
-        #   render json: @user, status: :ok
-        # else
-        #   render json: { errors: @user.errors.full_messages }, status: :unprocessable_entity
-        # end
-      end
-
-      # DELETE /users/:id
-      def destroy
-        # @user.destroy
-        # render json: @user, status: :ok
       end
 
       private
