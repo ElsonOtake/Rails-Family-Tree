@@ -4,7 +4,7 @@ module Api
     class UsersController < ApplicationController
       before_action :find_user, except: %i[create index]
 
-      ALLOWED_DATA = %(name gender alive birth death description).freeze
+      # ALLOWED_DATA = %(name gender alive birth death description).freeze
 
       # GET /users
       def index
