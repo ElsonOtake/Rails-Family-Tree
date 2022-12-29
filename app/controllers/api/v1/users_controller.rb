@@ -74,7 +74,7 @@ module Api
       def find_children
         pair = Pair.where('leaf1_id = ?', params[:id]).or(Pair.where('leaf2_id = ?', params[:id]))
         branches = Branch.where(pair_id: pair).select(:leaf_id)
-        Leaf.where(id: branches).select(:id, :name, :gender).order(:birth)
+        Leaf.select(:id, :name, :gender).where(id: branches).order(:birth)
       end
 
       def find_partner
