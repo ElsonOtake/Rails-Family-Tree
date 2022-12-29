@@ -84,10 +84,9 @@ module Api
       end
 
       def find_siblings
-        Leaf.find_by_sql("select leafs.id, name, gender from leafs join branches on
-          branches.leaf_id = leafs.id join pairs on pairs.id = branches.pair_id where pairs.id =
-          (select pair_id from branches where leaf_id = #{params[:id]}) and leafs.id <> #{params[:id]}
-          order by birth")
+        parents = Branch.where('leaf_id = ?', params[:id])[0].pair_id
+        siblings = Branch.select(:leaf_id).where('pair_id = ?', parents).where.not('leaf_id = ?', params[:id])
+        Leaf.select(:id, :name, :gender).where(id: siblings).order(:birth)
       end
     end
   end
