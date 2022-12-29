@@ -74,9 +74,6 @@ module Api
         pair = Pair.where('leaf1_id = ?', params[:id]).or(Pair.where('leaf2_id = ?', params[:id]))
         branches = Branch.where(pair_id: pair).select(:leaf_id)
         Leaf.where(id: branches).select(:id, :name, :gender).order(:birth)
-        # Leaf.find_by_sql("select id, name, gender from leafs where id in (select leaf_id
-        #   from branches join pairs on branches.pair_id = pairs.id where leaf1_id = #{params[:id]} or
-        #   leaf2_id = #{params[:id]}) order by birth")
       end
 
       def find_partner
