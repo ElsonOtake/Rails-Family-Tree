@@ -77,9 +77,9 @@ module Api
       end
 
       def find_partner
-        Leaf.find_by_sql("select id, name, gender from leafs where id in (select leaf1_id
-          from pairs where leaf2_id = #{params[:id]} union select leaf2_id from pairs where
-          leaf1_id = #{params[:id]})")
+        p1 = Pair.select(:leaf1_id).where('leaf2_id = ?', params[:id])
+        p2 = Pair.select(:leaf2_id).where('leaf1_id = ?', params[:id])
+        Leaf.select(:id, :name, :gender).where(id: p1).or(Leaf.where(id: p2))
       end
 
       def find_siblings
