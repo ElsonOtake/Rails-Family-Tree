@@ -65,9 +65,10 @@ module Api
       end
 
       def find_parents
-        Leaf.find_by_sql("select id, name, gender from leafs where id in
-          (select leafs.id from leafs join pairs on leafs.id = leaf1_id or leafs.id = leaf2_id join
-          branches on branches.pair_id = pairs.id where branches.leaf_id = #{params[:id]})")
+        branch = Branch.select(:pair_id).where('leaf_id = ?', params[:id])
+        p1 = Pair.select(:leaf1_id).where(id: branch)
+        p2 = Pair.select(:leaf2_id).where(id: branch)
+        Leaf.select(:id, :name, :gender).where(id: p1).or(Leaf.where(id: p2)).order(gender: :desc)
       end
 
       def find_children
